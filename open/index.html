@@ -1,13 +1,79 @@
 <html>
 <head>
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    <style>
+    html, body {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(10deg, #200063 10%, #006171 100%);
+        font-family: 'ZCOOL QingKe HuangYou'
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .logo-wrapper {
+        text-align: center;
+    }
+
+    .allbit-logo {
+        height: 56px;
+    }
+
+    .list {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 100px;
+        line-height: 2em;
+        color: #00d6e4;
+    }
+
+    .list > li {
+        list-style: none;
+        font-size: 24px;
+        color: white;
+    }
+
+    li > a {
+        text-decoration: none;
+        color: white;
+    }
+
+    li > a:hover, a:active {
+        opacity: 0.7;
+    }
+
+    li > a:active {
+        opacity: 0.7;
+    }
+    </style>
 </head>
 <body>
-    <h1>Allbit Open API Documentation</h1>
-    <p>Select language</p>
-    <li><a href="./ko">Korean</a></li>
-    <li><a href="./en">English</a></li>
-    <br>
-    <p>Example</p>
-    <li><a href="https://github.com/allbit-com/api-python">Python</a></li>
+    <div class="container">
+        <div class="logo-wrapper">
+            <img class="allbit-logo" src="https://allbit.com/static/img/footer-logo.svg">
+            <h1 style="color: white; margin-top: 10px; font-weight: bold;">OPEN API</h1>
+        </div>
+        <div class="list">
+            <p>Select language</p>
+            <li><a href="./ko">Korean</a></li>
+            <li><a href="./en">English</a></li>
+            <br>
+            <p>Example</p>
+            <li><a href="https://github.com/allbit-com/api-python">Python</a></li>
+        </div>
+    </div>
+    
 </body>
 </html>
