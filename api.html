@@ -1,0 +1,1937 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="ownerId" content="70318">
+      <meta name="publishedId" content="S11DV2Lb">
+
+      <meta name="description" content="API and SDK Documentation
+Version 1.1
+
+오류 메시지
+
+API Key가 올바르지 않은 경우
+  {
+      &amp;quot;info&amp;quot;: &amp;quot;invalid_api_key&amp;quot;,
+      &amp;quot;result&amp;quot;: &amp;quot;fail&amp;quot;
+  }
+
+
+
+">
+    <meta name="generator" content="Postman Documenter">
+      <title>Allbit Open API</title>
+
+    <!-- Google Tag Manager -->
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js" nonce=""></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-KCKQFT"></script><script nonce="">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KCKQFT');</script>
+    <!-- End Google Tag Manager -->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700,800" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/docs-assets/styles/production.min.css">
+      <link rel="stylesheet" type="text/css" href="/docs-assets/styles/custom.scss?top-bar=FFFFFF&amp;right-sidebar=303030&amp;highlight=6DCBE6&amp;">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+      <link rel="stylesheet" href="https://run.pstmn.io/button.css">
+
+    <script src="/docs-assets/js/messenger-setup.js" nonce=""></script>
+      <meta property="og:title" content="Allbit Open API">
+      <meta property="og:description" content="API and SDK Documentation
+Version 1.1
+
+오류 메시지
+
+API Key가 올바르지 않은 경우
+  {
+      &amp;quot;info&amp;quot;: &amp;quot;invalid_api_key&amp;quot;,
+      &amp;quot;result&amp;quot;: &amp;quot;fail&amp;quot;
+  }
+
+
+
+">
+      <meta property="og:site_name" content="Allbit Open API">
+      <meta property="og:url" content="https://documenter.getpostman.com/view/70318/S11DV2Lb">
+      <meta property="og:image" content="https://res.cloudinary.com/postman/image/upload/w_152,h_56,c_fit,f_auto,t_team_logo/v1/team/23f819560d82023899debeae65157cc1ed5390c8775046f1855a6522d505544e">
+
+
+      <meta name="twitter:title" value="Allbit Open API">
+      <meta name="twitter:description" value="API and SDK Documentation
+Version 1.1
+
+오류 메시지
+
+API Key가 올바르지 않은 경우
+  {
+      &amp;quot;info&amp;quot;: &amp;quot;invalid_api_key&amp;quot;,
+      &amp;quot;result&amp;quot;: &amp;quot;fail&amp;quot;
+  }
+
+
+
+">
+    <meta name="twitter:card" content="summary">
+      <meta name="twitter:domain" value="https://documenter.getpostman.com/view/70318/S11DV2Lb">
+      <meta name="twitter:image" content="https://res.cloudinary.com/postman/image/upload/w_152,h_56,c_fit,f_auto,t_team_logo/v1/team/23f819560d82023899debeae65157cc1ed5390c8775046f1855a6522d505544e">
+    <meta name="twitter:label1" value="Last Update">
+    <meta name="twitter:data1" value="">
+  <script id="_pmPostmanRunObject" async="" src="https://run.pstmn.io/button.js"></script></head>
+
+  <body><style id="postman-critical-css" type="text/css">.postman-run-button{background:url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjEyM3B4IiBoZWlnaHQ9IjMwcHgiIHZpZXdCb3g9IjAgMCAxMjMgMzAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEyMyAzMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PGRlZnM+PHBvbHlnb24gaWQ9IlNWR0lEXzlfIiBwb2ludHM9Ii0yOTYsLTc0IC0yOTYsLTYyIC0yODYsLTY4Ii8+PC9kZWZzPjxjbGlwUGF0aCBpZD0iU1ZHSURfMl8iPjx1c2UgeGxpbms6aHJlZj0iI1NWR0lEXzlfIiBvdmVyZmxvdz0idmlzaWJsZSIvPjwvY2xpcFBhdGg+PGcgY2xpcC1wYXRoPSJ1cmwoI1NWR0lEXzJfKSI+PGRlZnM+PHJlY3QgaWQ9IlNWR0lEXzExXyIgeD0iLTkyNSIgeT0iLTIyOCIgd2lkdGg9Ijk0MiIgaGVpZ2h0PSI1NjMiLz48L2RlZnM+PGNsaXBQYXRoIGlkPSJTVkdJRF80XyI+PHVzZSB4bGluazpocmVmPSIjU1ZHSURfMTFfIiBvdmVyZmxvdz0idmlzaWJsZSIvPjwvY2xpcFBhdGg+PC9nPjwvZz48Zz48ZGVmcz48cG9seWdvbiBpZD0iU1ZHSURfMTNfIiBwb2ludHM9Ii0yOTQsLTEwIC0yOTQsMiAtMjg0LC00Ii8+PC9kZWZzPjxjbGlwUGF0aCBpZD0iU1ZHSURfNl8iPjx1c2UgeGxpbms6aHJlZj0iI1NWR0lEXzEzXyIgb3ZlcmZsb3c9InZpc2libGUiLz48L2NsaXBQYXRoPjxnIGNsaXAtcGF0aD0idXJsKCNTVkdJRF82XykiPjxkZWZzPjxyZWN0IGlkPSJTVkdJRF8xNV8iIHg9Ii05MjMiIHk9Ii0xNjQiIHdpZHRoPSI5NDIiIGhlaWdodD0iNTYzIi8+PC9kZWZzPjxjbGlwUGF0aCBpZD0iU1ZHSURfOF8iPjx1c2UgeGxpbms6aHJlZj0iI1NWR0lEXzE1XyIgb3ZlcmZsb3c9InZpc2libGUiLz48L2NsaXBQYXRoPjwvZz48L2c+PHBhdGggZmlsbD0iI0Y0NzAyMyIgZD0iTTEyMywyN2MwLDEuNjU3LTEuMzQzLDMtMywzSDNjLTEuNjU3LDAtMy0xLjM0My0zLTNWM2MwLTEuNjU3LDEuMzQzLTMsMy0zaDExN2MxLjY1NywwLDMsMS4zNDMsMywzVjI3eiIvPjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yMy40NjMsMTYuMzc1djMuNTc2SDIyVjExaDIuNTI4YzEuMTU0LDAsMi4wMSwwLjIxOCwyLjU2NSwwLjY1YzAuNTU1LDAuNDMyLDAuODMyLDEuMDg2LDAuODMyLDEuOTU4IGMwLDEuMTE0LTAuNTc5LDEuOTA4LTEuNzM4LDIuMzgybDIuNTI4LDMuOTYxSDI3LjA1bC0yLjE0Mi0zLjU3NkgyMy40NjN6IE0yMy40NjMsMTUuMTYzaDEuMDE3YzAuNjgyLDAsMS4xNzUtMC4xMjYsMS40OC0wLjM3OSBjMC4zMDctMC4yNTMsMC40NTktMC42MjksMC40NTktMS4xMjZjMC0wLjUwNy0wLjE2NC0wLjg3LTAuNDk1LTEuMDljLTAuMzMxLTAuMjIxLTAuODI4LTAuMzMxLTEuNDkzLTAuMzMxaC0wLjk2OFYxNS4xNjN6Ii8+PHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTM0LjgzNiwxOS43NzFsLTAuMjAzLTAuODg4aC0wLjA3MmMtMC4yMDEsMC4zMTMtMC40ODUsMC41NjEtMC44NTQsMC43NGMtMC4zNywwLjE4LTAuNzksMC4yNy0xLjI2NSwwLjI3IGMtMC44MiwwLTEuNDMyLTAuMjA0LTEuODM2LTAuNjEyUzMwLDE4LjI1NSwzMCwxNy40MjdWMTNoMS40NDl2NC4xNzZjMCwwLjUxOSwwLjEwNywwLjkwNSwwLjMxOSwxLjE2NSBjMC4yMTIsMC4yNTksMC41NDUsMC4zOSwwLjk5OCwwLjM5YzAuNjA0LDAsMS4wNDctMC4xODIsMS4zMzItMC41NDNjMC4yODMtMC4zNjEsMC40MjQtMC45NjUsMC40MjQtMS44MTRWMTNoMS40NDV2Ni43NzFIMzQuODM2eiIvPjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik00My45NTcsMjBoLTEuNDQ1di00LjE2M2MwLTAuNTIyLTAuMTA1LTAuOTEyLTAuMzE1LTEuMTY5Yy0wLjIxLTAuMjU4LTAuNTQzLTAuMzg2LTEtMC4zODYgYy0wLjYwOCwwLTEuMDU0LDAuMTgtMS4zMzUsMC41MzljLTAuMjgyLDAuMzU4LTAuNDIzLDAuOTYtMC40MjMsMS44MDZWMjBIMzh2LTYuNzcxaDEuMTI3bDAuMjAxLDAuODg4aDAuMDc0IGMwLjIwMy0wLjMyMSwwLjQ5My0wLjU3LDAuODY4LTAuNzQ2YzAuMzc2LTAuMTc2LDAuNzkyLTAuMjY0LDEuMjQ5LTAuMjY0YzEuNjI1LDAsMi40MzgsMC44MjYsMi40MzgsMi40NzlWMjB6Ii8+PHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTQ4LjM4NSwxMS40MzZjMC0wLjI1NywwLjA2OS0wLjQ1NSwwLjIxMS0wLjU5NGMwLjE0LTAuMTM5LDAuMzQyLTAuMjA4LDAuNjAyLTAuMjA4IGMwLjI1NCwwLDAuNDUsMC4wNjksMC41OTIsMC4yMDhTNTAsMTEuMTc5LDUwLDExLjQzNmMwLDAuMjQ0LTAuMDY5LDAuNDM4LTAuMjExLDAuNTc3Yy0wLjE0MiwwLjE0Mi0wLjMzOCwwLjIxMi0wLjU5MiwwLjIxMiBjLTAuMjYsMC0wLjQ2Mi0wLjA3LTAuNjAyLTAuMjEyQzQ4LjQ1NCwxMS44NzMsNDguMzg1LDExLjY4LDQ4LjM4NSwxMS40MzZ6IE00OS45MDgsMjBINDguNDd2LTYuNzcxaDEuNDM4VjIweiIvPjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik01Ny45NTUsMTkuODk0aC0xLjQ0NFYxNS43M2MwLTAuNTIyLTAuMTA0LTAuOTEyLTAuMzE0LTEuMTY5Yy0wLjIxLTAuMjU4LTAuNTQ0LTAuMzg2LTEuMDAxLTAuMzg2IGMtMC42MDgsMC0xLjA1NCwwLjE4LTEuMzM1LDAuNTM5Yy0wLjI4MiwwLjM1OC0wLjQyMiwwLjk2LTAuNDIyLDEuODA2djMuMzczSDUydi02Ljc3MWgxLjEyNmwwLjIwMSwwLjg4OGgwLjA3NCBjMC4yMDMtMC4zMjEsMC40OTQtMC41NywwLjg2OS0wLjc0NkM1NC42NDYsMTMuMDg4LDU1LjA2MiwxMyw1NS41MTksMTNjMS42MjUsMCwyLjQzNywwLjgyNiwyLjQzNywyLjQ3OVYxOS44OTR6Ii8+PHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTY5LjQ2MSwxMy43MTVjMCwwLjkzNS0wLjMwNywxLjY1MS0wLjkxOSwyLjE0OWMtMC42MTEsMC40OTgtMS40ODIsMC43NDctMi42MTMsMC43NDdoLTAuOTN2My4zNDloLTEuNDYzIHYtOC45NTFoMi41NzZjMS4xMTgsMCwxLjk1NiwwLjIyOSwyLjUxMywwLjY4N1M2OS40NjEsMTIuODI1LDY5LjQ2MSwxMy43MTV6IE02NC45OTksMTUuMzhoMC43NzZjMC43NTEsMCwxLjMwMi0wLjEzLDEuNjUzLTAuMzkyIGMwLjM1MS0wLjI2MSwwLjUyNi0wLjY2OSwwLjUyNi0xLjIyNGMwLTAuNTE1LTAuMTU3LTAuODk3LTAuNDcxLTEuMTUxYy0wLjMxNS0wLjI1My0wLjgwNS0wLjM3OS0xLjQ3LTAuMzc5aC0xLjAxNlYxNS4zOHoiLz48cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNzcuMTAxLDE2LjU2MmMwLDEuMTA3LTAuMjgzLDEuOTctMC44NTEsMi41OWMtMC41NjcsMC42MjEtMS4zNTcsMC45MzEtMi4zNjksMC45MzEgYy0wLjYzMywwLTEuMTkxLTAuMTQ0LTEuNjc3LTAuNDI5Yy0wLjQ4Ni0wLjI4Ni0wLjg1OS0wLjY5NS0xLjEyMS0xLjIzYy0wLjI2Mi0wLjUzNC0wLjM5Mi0xLjE1NS0wLjM5Mi0xLjg2MSBjMC0xLjA5OCwwLjI4MS0xLjk1NCwwLjg0NS0yLjU3YzAuNTYyLTAuNjE3LDEuMzU2LTAuOTI1LDIuMzgxLTAuOTI1YzAuOTc5LDAsMS43NTYsMC4zMTQsMi4zMjcsMC45NDQgQzc2LjgxNSwxNC42NDIsNzcuMTAxLDE1LjQ5Myw3Ny4xMDEsMTYuNTYyeiBNNzIuMTczLDE2LjU2MmMwLDEuNTY0LDAuNTc4LDIuMzQ1LDEuNzMyLDIuMzQ1YzEuMTQzLDAsMS43MTQtMC43OCwxLjcxNC0yLjM0NSBjMC0xLjU0Ny0wLjU3NS0yLjMxOS0xLjcyNy0yLjMxOWMtMC42MDQsMC0xLjA0MSwwLjE5OS0xLjMxMiwwLjZTNzIuMTczLDE1LjgxNSw3Mi4xNzMsMTYuNTYyeiIvPjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik04My4zMDIsMTguMDMyYzAsMC42Ni0wLjI0LDEuMTY2LTAuNzIzLDEuNTJjLTAuNDgxLDAuMzUzLTEuMTcsMC41My0yLjA2OCwwLjUzIGMtMC45MDEsMC0xLjYyNi0wLjEzNy0yLjE3My0wLjQwOVYxOC40M2MwLjc5NiwwLjM2NywxLjUzNiwwLjU1MSwyLjIyMiwwLjU1MWMwLjg4NiwwLDEuMzI5LTAuMjY4LDEuMzI5LTAuODAzIGMwLTAuMTcxLTAuMDUtMC4zMTMtMC4xNDctMC40MjljLTAuMDk5LTAuMTE0LTAuMjYtMC4yMzEtMC40ODMtMC4zNTRjLTAuMjI2LTAuMTIyLTAuNTM3LTAuMjYxLTAuOTM3LTAuNDE2IGMtMC43OC0wLjMwMi0xLjMwOC0wLjYwNC0xLjU4My0wLjkwNnMtMC40MTMtMC42OTQtMC40MTMtMS4xNzZjMC0wLjU3OSwwLjIzMy0xLjAyOSwwLjctMS4zNTFjMC40NjktMC4zMiwxLjEwNC0wLjQ3OSwxLjkwNy0wLjQ3OSBjMC43OTYsMCwxLjU0OSwwLjE2MSwyLjI1OSwwLjQ4M2wtMC40NjUsMS4wODRjLTAuNzMtMC4zMDItMS4zNDUtMC40NTMtMS44NDMtMC40NTNjLTAuNzU5LDAtMS4xMzksMC4yMTctMS4xMzksMC42NDggYzAsMC4yMTMsMC4wOTksMC4zOTMsMC4yOTgsMC41MzljMC4xOTcsMC4xNDcsMC42MjksMC4zNDksMS4yOTQsMC42MDZjMC41NiwwLjIxNiwwLjk2NSwwLjQxMywxLjIxOCwwLjU5MyBjMC4yNTQsMC4xOCwwLjQ0MSwwLjM4NywwLjU2MywwLjYyMUM4My4yNDEsMTcuNDI0LDgzLjMwMiwxNy43MDUsODMuMzAyLDE4LjAzMnoiLz48cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNODcuMzc5LDE4LjkxOWMwLjM1MiwwLDAuNzAyLTAuMDU1LDEuMDU0LTAuMTY2djEuMDg0Yy0wLjE1OSwwLjA2OS0wLjM2NCwwLjEyNy0wLjYxNSwwLjE3NCBjLTAuMjUyLDAuMDQ3LTAuNTEyLDAuMDcxLTAuNzgxLDAuMDcxYy0xLjM2MywwLTIuMDQ0LTAuNzE5LTIuMDQ0LTIuMTU1di0zLjY0OGgtMC45MjV2LTAuNjM3bDAuOTkyLTAuNTI1bDAuNDg5LTEuNDMzaDAuODg4djEuNTA1IGgxLjkyOXYxLjA5aC0xLjkyOXYzLjYyNGMwLDAuMzQ4LDAuMDg3LDAuNjAzLDAuMjYxLDAuNzY4Qzg2Ljg2OSwxOC44MzUsODcuMDk4LDE4LjkxOSw4Ny4zNzksMTguOTE5eiIvPjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik05NS40OSwxOS45NmgtMS40NDV2LTQuMTc1YzAtMC41MTktMC4wOTgtMC45MDYtMC4yOTMtMS4xNjJjLTAuMTk2LTAuMjU1LTAuNTAzLTAuMzgxLTAuOTE4LTAuMzgxIGMtMC41NTYsMC0wLjk2MywwLjE4LTEuMjIzLDAuNTQxYy0wLjI1OCwwLjM2MS0wLjM4OCwwLjk2Mi0wLjM4OCwxLjgwNHYzLjM3M2gtMS40Mzl2LTYuNzcxaDEuMTI3bDAuMjAyLDAuODg4aDAuMDczIGMwLjE4OC0wLjMyMSwwLjQ2MS0wLjU3LDAuODE3LTAuNzQ2YzAuMzU3LTAuMTc2LDAuNzUtMC4yNjQsMS4xNzktMC4yNjRjMS4wNCwwLDEuNzMsMC4zNTUsMi4wNjgsMS4wNjVoMC4wOTggYzAuMjAxLTAuMzM1LDAuNDgyLTAuNTk2LDAuODQ2LTAuNzg0YzAuMzYzLTAuMTg4LDAuNzc5LTAuMjgxLDEuMjQ4LTAuMjgxYzAuODA5LDAsMS4zOTcsMC4yMDQsMS43NjcsMC42MTIgYzAuMzcsMC40MDgsMC41NTUsMS4wMywwLjU1NSwxLjg2N3Y0LjQxNGgtMS40Mzl2LTQuMTc1YzAtMC41MTktMC4wOTktMC45MDYtMC4yOTYtMS4xNjJjLTAuMTk4LTAuMjU1LTAuNTA2LTAuMzgxLTAuOTIyLTAuMzgxIGMtMC41NTksMC0wLjk2OSwwLjE3NC0xLjIyOCwwLjUyMmMtMC4yNiwwLjM1LTAuMzg5LDAuODg1LTAuMzg5LDEuNjA3VjE5Ljk2eiIvPjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xMDYuMDA3LDE5Ljk2bC0wLjI4Ny0wLjk0M2gtMC4wNDljLTAuMzI3LDAuNDEzLTAuNjU2LDAuNjkyLTAuOTg1LDAuODQyIGMtMC4zMzEsMC4xNDctMC43NTUsMC4yMjQtMS4yNzMsMC4yMjRjLTAuNjY1LDAtMS4xODUtMC4xOC0xLjU1OS0wLjUzOWMtMC4zNzMtMC4zNTktMC41Ni0wLjg2Ni0wLjU2LTEuNTI0IGMwLTAuNjk3LDAuMjU5LTEuMjI0LDAuNzc3LTEuNTc5czEuMzA4LTAuNTQ5LDIuMzY4LTAuNTgxbDEuMTctMC4wMzdWMTUuNDZjMC0wLjQzMi0wLjEwMS0wLjc1Ny0wLjMwMy0wLjk3MSBjLTAuMjAzLTAuMjE1LTAuNTE2LTAuMzIxLTAuOTQtMC4zMjFjLTAuMzQ2LDAtMC42NzksMC4wNTItMC45OTgsMC4xNTNjLTAuMzE3LDAuMTAzLTAuNjIzLDAuMjIzLTAuOTE4LDAuMzYxbC0wLjQ2NS0xLjAyNyBjMC4zNjctMC4xOTMsMC43Ny0wLjM0LDEuMjA1LTAuNDM5YzAuNDM4LTAuMSwwLjg1LTAuMTQ5LDEuMjM3LTAuMTQ5YzAuODYxLDAsMS41MTIsMC4xODgsMS45NDksMC41NjMgYzAuNDM5LDAuMzc1LDAuNjU5LDAuOTY1LDAuNjU5LDEuNzd2NC41NjFIMTA2LjAwN3ogTTEwMy44NjUsMTguOThjMC41MjIsMCwwLjk0MS0wLjE0NywxLjI1OC0wLjQzOSBjMC4zMTUtMC4yOTEsMC40NzUtMC43LDAuNDc1LTEuMjI2di0wLjU4OGwtMC44NywwLjAzN2MtMC42NzcsMC4wMjQtMS4xNjksMC4xMzYtMS40NzksMC4zMzhjLTAuMzA4LDAuMjAzLTAuNDYyLDAuNTEzLTAuNDYyLDAuOTMgYzAsMC4zMDEsMC4wOSwwLjUzMywwLjI3LDAuNjk5QzEwMy4yMzYsMTguODk2LDEwMy41MDYsMTguOTgsMTAzLjg2NSwxOC45OHoiLz48cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTE1LDE5Ljk2aC0xLjQ0NXYtNC4xNjNjMC0wLjUyMi0wLjEwNC0wLjkxMi0wLjMxNC0xLjE2OWMtMC4yMTEtMC4yNTgtMC41NDQtMC4zODYtMS4wMDEtMC4zODYgYy0wLjYwOCwwLTEuMDU0LDAuMTgtMS4zMzUsMC41MzljLTAuMjgxLDAuMzU4LTAuNDIzLDAuOTYtMC40MjMsMS44MDZ2My4zNzNoLTEuNDM4di02Ljc3MWgxLjEyNmwwLjIwMiwwLjg4OGgwLjA3MyBjMC4yMDQtMC4zMjEsMC40OTMtMC41NywwLjg3LTAuNzQ2YzAuMzc1LTAuMTc2LDAuNzkxLTAuMjY0LDEuMjQ4LTAuMjY0YzEuNjI0LDAsMi40MzcsMC44MjYsMi40MzcsMi40NzlWMTkuOTZ6Ii8+PGc+PGRlZnM+PHBvbHlnb24gaWQ9IlNWR0lEXzIxXyIgcG9pbnRzPSI4LDEwIDgsMjEgMTcsMTUuNiIvPjwvZGVmcz48Y2xpcFBhdGggaWQ9IlNWR0lEXzEwXyI+PHVzZSB4bGluazpocmVmPSIjU1ZHSURfMjFfIiBvdmVyZmxvdz0idmlzaWJsZSIvPjwvY2xpcFBhdGg+PGcgY2xpcC1wYXRoPSJ1cmwoI1NWR0lEXzEwXykiPjxkZWZzPjxyZWN0IGlkPSJTVkdJRF8yM18iIHg9Ii01NTguMSIgeT0iLTEyOC40IiB3aWR0aD0iODQ3LjgiIGhlaWdodD0iNTA2LjciLz48L2RlZnM+PGNsaXBQYXRoIGlkPSJTVkdJRF8xMl8iPjx1c2UgeGxpbms6aHJlZj0iI1NWR0lEXzIzXyIgb3ZlcmZsb3c9InZpc2libGUiLz48L2NsaXBQYXRoPjxyZWN0IHg9IjMuNSIgeT0iNS43IiBjbGlwLXBhdGg9InVybCgjU1ZHSURfMTJfKSIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE5LjgiLz48L2c+PC9nPjwvc3ZnPg==');display:inline-block;border-radius:3px;cursor:pointer;height:30px;border:none;width:123px}</style>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCKQFT"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+    <div class="layout">
+      <div class="top-bar">
+        <div id="menu-toggle" class="visible-xs visible-sm"></div>
+      
+          <div class="branded-logo" data-identity-href="https://res.cloudinary.com/postman/image/upload/w_152,h_56,c_fit,f_auto,t_team_logo/v1/team/23f819560d82023899debeae65157cc1ed5390c8775046f1855a6522d505544e" style="background-image: url(&quot;https://res.cloudinary.com/postman/image/upload/w_152,h_56,c_fit,f_auto,t_team_logo/v1/team/23f819560d82023899debeae65157cc1ed5390c8775046f1855a6522d505544e&quot;);"></div>
+      
+        <div class="top-bar-right">
+            <div class="hidden-xs hidden-sm publish-doc">
+            </div>
+      
+            <div class="public-col">
+              <div class="globe public hidden-xs">Public</div>
+            </div>
+      
+              <div class="postman-run-button" data-postman-action="collection/import" data-postman-var-1="70318-e3ceced5-9427-40b5-b8d4-6922f5ca6368-S11DV2Lb"></div>
+            <script src="/docs-assets/js/runbutton.js" nonce="" type="text/javascript" id="public-run-button-embed" data-web-host="https://www.getpostman.com/" data-button-url="https://run.pstmn.io/button.js"></script>
+      
+            <div class="environment-dropdown dropdown hidden-xs">
+                <button class="btn btn-default dropdown-toggle" type="button" id="environment-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <div class="dropdown-button ellipsis active-environment" data-environment-id="70318-e41a579b-f88c-4e0a-aceb-7b85938ff947">Allbit Open API</div>
+      
+                    <script src="/docs-assets/js/run-env-setup.js" nonce="" type="text/javascript" id="public-run-button-env" data-env-name="Allbit Open API" data-env-values="[{&quot;key&quot;:&quot;apiKey&quot;,&quot;value&quot;:&quot;발급받은 API Key&quot;,&quot;description&quot;:&quot;&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;wallet&quot;,&quot;value&quot;:&quot;Allbit 지갑주소&quot;,&quot;description&quot;:&quot;&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;orders&quot;,&quot;value&quot;:&quot;주문 해시(ohash) 배열&quot;,&quot;description&quot;:&quot;&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;pair&quot;,&quot;value&quot;:&quot;Pair ID&quot;,&quot;description&quot;:&quot;&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;isSell&quot;,&quot;value&quot;:&quot;매도 주문 여부 (Boolean)&quot;,&quot;description&quot;:&quot;&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;amount&quot;,&quot;value&quot;:&quot;수량 (Decimal 미적용)&quot;,&quot;description&quot;:&quot;&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;price&quot;,&quot;value&quot;:&quot;가격&quot;,&quot;description&quot;:&quot;&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;action&quot;,&quot;value&quot;:&quot;Action ID&quot;,&quot;description&quot;:&quot;&quot;,&quot;type&quot;:&quot;text&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;actionHash&quot;,&quot;value&quot;:&quot;서명할 메시지&quot;,&quot;description&quot;:&quot;&quot;,&quot;type&quot;:&quot;text&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;v&quot;,&quot;value&quot;:&quot;서명 결과 V값 (1byte hex)&quot;,&quot;description&quot;:&quot;&quot;,&quot;type&quot;:&quot;text&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;r&quot;,&quot;value&quot;:&quot;서명 결과 R값 (32byte hex)&quot;,&quot;description&quot;:&quot;&quot;,&quot;type&quot;:&quot;text&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;s&quot;,&quot;value&quot;:&quot;서명 결과 S값 (32byte hex)&quot;,&quot;description&quot;:&quot;&quot;,&quot;type&quot;:&quot;text&quot;,&quot;enabled&quot;:true}]"></script>
+                  <span class="pm-doc-sprite pm-doc-sprite-dropdown-caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="environment-dropdown">
+                    <li class="dropdown-menu-item" data-environment-id="0">No environment</li>
+                    <li class="dropdown-menu-seperator"></li>
+                    <li class="dropdown-menu-section">Shared Templates</li>
+                    <li class="dropdown-menu-item dropdown-menu-empty" data-environment-id="undefined-undefined">No shared environments</li>
+                    <li class="dropdown-menu-seperator"></li>
+                    <li class="dropdown-menu-section">Private Environments</li>
+                    <li class="dropdown-menu-item " data-environment-id="70318-e41a579b-f88c-4e0a-aceb-7b85938ff947">Allbit Open API</li>
+                    <li class="dropdown-menu-item " data-environment-id="70318-0236ac7c-30cd-7a2d-2f77-0f80e58c6d6f">kyc</li>
+                    <li class="dropdown-menu-item " data-environment-id="70318-e0e90599-1c9b-0fd7-337c-aa0b76cbbb46">local_php_endpoint</li>
+                    <li class="dropdown-menu-item " data-environment-id="70318-4e947b9f-1e68-6d38-10b4-927761ac8755">realserver_php_endpoint</li>
+                    <li class="dropdown-menu-item " data-environment-id="70318-3ed2de4c-3275-401c-8d5b-aa2dfe78c854">schoolmom_local</li>
+                    <li class="dropdown-menu-item " data-environment-id="70318-4475133a-e9c9-4047-9661-1bcc2a655078">schoolmom_prod</li>
+                    <li class="dropdown-menu-item " data-environment-id="70318-48b61303-dd32-6351-c67b-ec87747996a9">upbit</li>
+                </ul>
+            </div>
+      
+      
+          <button type="button" class="btn pm-btn pm-btn-secondary settings-toggle visible-xs">
+            <span class="icon settings-icon"></span>
+          </button>
+        </div>
+      </div>
+    
+      <div class="modal" id="rawBodyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <button type="button" class="close btn-circle" data-dismiss="modal" aria-label="Close">
+          <div>
+            <span aria-hidden="true">×</span>
+          </div>
+        </button>
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="modal" id="snippetModal" tabindex="-1" role="dialog" aria-labelledby="documentation-response-modal">
+        <button type="button" class="close btn-circle" data-dismiss="modal" aria-label="Close">
+          <div>
+            <span aria-hidden="true">×</span>
+          </div>
+        </button>
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <pre><code></code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="container-fluid no-gutter">
+        <div class="row no-gutter">
+          <div class="col-xs-12 info no-gutter"><div class="pm-persistent-notification-container"></div><div class="pm-global-notification-container"></div>
+            <div id="mobile-controls">
+    
+              <label>Environment</label>
+                <div class="environment-dropdown dropdown">
+                    <button class="btn pm-btn pm-btn-secondary dropdown-toggle" type="button" id="environment-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <div class="dropdown-button ellipsis active-environment" data-environment-id="undefined-e41a579b-f88c-4e0a-aceb-7b85938ff947">Allbit Open API</div>
+    
+                        <script src="/docs-assets/js/run-env-setup.js" nonce="" type="text/javascript" id="public-run-button-env" data-env-name="Allbit Open API" data-env-values="[{&quot;key&quot;:&quot;apiKey&quot;,&quot;value&quot;:&quot;발급받은 API Key&quot;,&quot;description&quot;:&quot;&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;wallet&quot;,&quot;value&quot;:&quot;Allbit 지갑주소&quot;,&quot;description&quot;:&quot;&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;orders&quot;,&quot;value&quot;:&quot;주문 해시(ohash) 배열&quot;,&quot;description&quot;:&quot;&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;pair&quot;,&quot;value&quot;:&quot;Pair ID&quot;,&quot;description&quot;:&quot;&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;isSell&quot;,&quot;value&quot;:&quot;매도 주문 여부 (Boolean)&quot;,&quot;description&quot;:&quot;&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;amount&quot;,&quot;value&quot;:&quot;수량 (Decimal 미적용)&quot;,&quot;description&quot;:&quot;&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;price&quot;,&quot;value&quot;:&quot;가격&quot;,&quot;description&quot;:&quot;&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;action&quot;,&quot;value&quot;:&quot;Action ID&quot;,&quot;description&quot;:&quot;&quot;,&quot;type&quot;:&quot;text&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;actionHash&quot;,&quot;value&quot;:&quot;서명할 메시지&quot;,&quot;description&quot;:&quot;&quot;,&quot;type&quot;:&quot;text&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;v&quot;,&quot;value&quot;:&quot;서명 결과 V값 (1byte hex)&quot;,&quot;description&quot;:&quot;&quot;,&quot;type&quot;:&quot;text&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;r&quot;,&quot;value&quot;:&quot;서명 결과 R값 (32byte hex)&quot;,&quot;description&quot;:&quot;&quot;,&quot;type&quot;:&quot;text&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;s&quot;,&quot;value&quot;:&quot;서명 결과 S값 (32byte hex)&quot;,&quot;description&quot;:&quot;&quot;,&quot;type&quot;:&quot;text&quot;,&quot;enabled&quot;:true}]"></script>
+                      <span class="pm-doc-sprite pm-doc-sprite-dropdown-caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="environment-dropdown">
+                        <li class="dropdown-menu-item" data-environment-id="0">No environment</li>
+                        <li class="dropdown-menu-seperator"></li>
+                        <li class="dropdown-menu-section">Shared Templates</li>
+                        <li class="dropdown-menu-item dropdown-menu-empty" data-environment-id="undefined-undefined">No shared environments</li>
+                        <li class="dropdown-menu-seperator"></li>
+                        <li class="dropdown-menu-section">Private Environments</li>
+                        <li class="dropdown-menu-item " data-environment-id="70318-e41a579b-f88c-4e0a-aceb-7b85938ff947">Allbit Open API</li>
+                        <li class="dropdown-menu-item " data-environment-id="70318-0236ac7c-30cd-7a2d-2f77-0f80e58c6d6f">kyc</li>
+                        <li class="dropdown-menu-item " data-environment-id="70318-e0e90599-1c9b-0fd7-337c-aa0b76cbbb46">local_php_endpoint</li>
+                        <li class="dropdown-menu-item " data-environment-id="70318-4e947b9f-1e68-6d38-10b4-927761ac8755">realserver_php_endpoint</li>
+                        <li class="dropdown-menu-item " data-environment-id="70318-3ed2de4c-3275-401c-8d5b-aa2dfe78c854">schoolmom_local</li>
+                        <li class="dropdown-menu-item " data-environment-id="70318-4475133a-e9c9-4047-9661-1bcc2a655078">schoolmom_prod</li>
+                        <li class="dropdown-menu-item " data-environment-id="70318-48b61303-dd32-6351-c67b-ec87747996a9">upbit</li>
+                    </ul>
+                </div>
+    
+                <label>Language</label>
+                <div class="language">
+                  <div class="btn-group languages">
+                    <button type="button" class="btn pm-btn pm-btn-secondary dropdown-toggle language-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <div class="active-lang ellipsis">cURL</div>
+                      <span class="pm-doc-sprite pm-doc-sprite-dropdown-caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right language_dropdown">
+                      <li class="dropdown-menu-item" data-snippetname="shell:curl">cURL</li>
+                      <li class="dropdown-menu-item" data-snippetname="javascript:jquery">jQuery</li>
+                      <li class="dropdown-menu-item" data-snippetname="ruby:native">Ruby</li>
+                      <li class="dropdown-menu-item" data-snippetname="python:requests">Python Requests</li>
+                      <li class="dropdown-menu-item" data-snippetname="node:native">Node</li>
+                      <li class="dropdown-menu-item" data-snippetname="php:curl">PHP</li>
+                      <li class="dropdown-menu-item" data-snippetname="go:native">Go</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+    
+            <div id="error-view">
+            </div>
+    
+            <div id="doc-body" class="">  <div class="row row-no-padding row-eq-height" id="intro">
+  <div class="col-md-6 col-xs-12 section">
+  <div class="api-information">
+    <div class="collection-name">
+      <p>Allbit Open API</p>
+    </div>
+    <div class="collection-description"><h2 id="api-and-sdk-documentation">API and SDK Documentation</h2>
+<h3 id="version-11">Version 1.1</h3>
+<hr>
+<h3 id="오류-메시지">오류 메시지</h3>
+<ul>
+<li><p>API Key가 올바르지 않은 경우</p>
+<pre class="click-to-expand-wrapper is-snippet-wrapper  language-undefined"><code class="language-undefined">  {
+      "info": "invalid_api_key",
+      "result": "fail"
+  }
+</code></pre></li>
+</ul>
+<hr>
+</div>
+  </div>
+</div>
+  <div class="col-md-6 col-xs-12 examples">
+    <div class="language hidden-xs hidden-sm">
+      <div class="language-heading">Language</div>
+      <div class="btn-group languages">
+        <button type="button" class="btn btn-default dropdown-toggle language-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <div class="active-lang ellipsis">cURL</div>
+          <span class="pm-doc-sprite pm-doc-sprite-dropdown-caret"></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right language_dropdown">
+          <li class="dropdown-menu-item" data-snippetname="shell:curl">cURL</li>
+          <li class="dropdown-menu-item" data-snippetname="javascript:jquery">jQuery</li>
+          <li class="dropdown-menu-item" data-snippetname="ruby:native">Ruby</li>
+          <li class="dropdown-menu-item" data-snippetname="python:requests">Python Requests</li>
+          <li class="dropdown-menu-item" data-snippetname="node:native">Node</li>
+          <li class="dropdown-menu-item" data-snippetname="php:curl">PHP</li>
+          <li class="dropdown-menu-item" data-snippetname="go:native">Go</li>
+        </ul>
+      </div>
+    </div>
+
+  <div class="hidden-xs hidden-sm sidebar-error">
+    <p class="heading">Could not load examples for this collection</p>
+    <button class="btn btn-default retry-button" id="retryLoadingExamples">Retry</button>
+  </div>
+  <div class="hidden-xs hidden-sm sidebar-loader spinner"></div>
+</div>
+
+</div>
+    <div class="row row-no-padding row-eq-height" id="72b2122c-6a91-4818-a50c-03b2d7320408">
+    <div class="col-md-6 col-xs-12 section">
+    <div class="api-information">
+  <div class="folder-name"><p>EXCHANGE</p></div>
+  <div class="folder-description"></div>
+</div>
+  </div>
+  <div class="col-md-6 col-xs-12 examples folder-examples"></div>
+</div>
+      <div class="row row-no-padding row-eq-height" id="cba67178-a4ad-441b-9bf1-5ad01aadd68b">
+  <div class="col-md-6 col-xs-12 section">
+  <div class="api-information">
+    <div class="heading">
+      <div class="name">
+        <span class="POST method" title="POST">POST</span>
+        전체 계좌 조회
+      </div>
+    </div>
+    <div class="url">https://api.allbit.com/open/v2/coin-amount</div>
+    <div class="description"><p>지갑별 보유한 자산 리스트를 보여줍니다.</p>
+<hr>
+<h3 id="response">Response</h3>
+<div class="click-to-expand-wrapper is-table-wrapper is-expandable"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rawName</td>
+<td>토큰의 이름</td>
+<td>String</td>
+</tr>
+<tr>
+<td>USD</td>
+<td>가격 (USD 단위)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>KRW</td>
+<td>가격 (KRW 단위)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>decAmount</td>
+<td>보유 수량 (Decimal 적용)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>address</td>
+<td>토큰의 주소</td>
+<td>String</td>
+</tr>
+<tr>
+<td>locked.order.amount</td>
+<td>주문으로 묶인 수량 (Decimal 미적용)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>locked.order.decAmount</td>
+<td>주문으로 묶인 수량 (Decimal 적용)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>locked.withdraw.amount</td>
+<td>출금으로 묶인 수량 (Decimal 미적용)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>locked.withdraw.decAmount</td>
+<td>출금으로 묶인 수량 (Decimal 적용)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>id</td>
+<td></td>
+<td>Number</td>
+</tr>
+<tr>
+<td>icon</td>
+<td>토큰 아이콘 이미지 URL</td>
+<td>String</td>
+</tr>
+<tr>
+<td>minDeposit</td>
+<td>최소 입금 수량</td>
+<td>String</td>
+</tr>
+<tr>
+<td>name</td>
+<td>토큰 심볼</td>
+<td>String</td>
+</tr>
+<tr>
+<td>decimal</td>
+<td>소수점 정확도</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>KRWAmount</td>
+<td>보유 수량의 KRW 환산치</td>
+<td>String</td>
+</tr>
+<tr>
+<td>USDAmount</td>
+<td>보유 수량의 USD 환산치</td>
+<td>String</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>보유 수량 (Decimal 미적용)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>withdraw.limitKYC</td>
+<td>KYC 인증이 된 경우 출금 가능 수량</td>
+<td>String</td>
+</tr>
+<tr>
+<td>withdraw.limitNonKYC</td>
+<td>KYC 인증이 안된 경우 출금 가능 수량</td>
+<td>String</td>
+</tr>
+<tr>
+<td>withdraw.fee</td>
+<td>출금 수수료</td>
+<td>String</td>
+</tr>
+<tr>
+<td>withdraw.remainToday</td>
+<td>오늘 출금 가능한 수량</td>
+<td>String</td>
+</tr>
+<tr>
+<td>markets.XXX.price</td>
+<td>마켓 별 토큰 가격</td>
+<td>String</td>
+</tr>
+<tr>
+<td>markets.XXX.amount</td>
+<td>보유 수량의 APOT 환산치</td>
+<td>String</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+
+      <div class="headers">
+        <div class="heading">HEADERS</div>
+        <hr>
+          <div class="param row">
+            <div class="name col-md-3 col-xs-12">Content-Type</div>
+            <div class="value col-md-9 col-xs-12">application/x-www-form-urlencoded</div>
+          </div>
+      </div>
+
+
+
+      <div class="request-body">
+        <div class="body-heading">BODY</div>
+
+            <hr>
+              <div class="param row">
+                <div class="name col-md-3 col-xs-12">apiKey</div>
+                <div class="value col-md-9 col-xs-12">발급받은 API Key</div>
+                  <div class="description col-md-9 col-xs-12"><p>*Required</p>
+</div>
+              </div>
+              <div class="param row">
+                <div class="name col-md-3 col-xs-12">wallet</div>
+                <div class="value col-md-9 col-xs-12">Allbit 지갑주소</div>
+                  <div class="description col-md-9 col-xs-12"><p>*Required</p>
+</div>
+              </div>
+      </div>
+
+  </div>
+  <br><br>
+</div>
+
+
+  <div class="col-md-6 col-xs-12 examples">
+    <div class="sample-request">
+      <div class="heading"><span>Example Request</span></div>
+
+      <div class="responses-index">
+          <div class="response-name"><span>전체 계좌 조회</span></div>
+      </div>
+    </div>
+
+    <div class="request code-snippet">
+          <div class="formatted-requests is-default" data-lang="cURL" data-id="cba67178-a4ad-441b-9bf1-5ad01aadd68b_0">
+            <pre class="click-to-expand-wrapper is-snippet-wrapper  language-javascript"><button class="btn btn-sm pull-right copy-request copy-request-modal" data-clipboard-target="#cURL_0_cba67178-a4ad-441b-9bf1-5ad01aadd68b" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button><code class="language-javascript" id="cURL_0_cba67178-a4ad-441b-9bf1-5ad01aadd68b">curl --location --request POST "https://api.allbit.com/open/v2/coin-amount" \
+  --header "Content-Type: application/x-www-form-urlencoded" \
+  --data "apiKey=HORYrlFVUHJuZ6VNXVmNjm6VJ0EONqZn23gUBMggTSAQxdy17XCx0nHguKuThAgyNSb6qRdIC3iLkxdSyVkp90tQc1SBuvmGWJjygjMhmLgtDZxjKZp2iIJReUjm3Htl&amp;wallet=0xfaa8ed1fbac594dd017121df8ebd4fe2bea9016f"</code></pre>
+            <!-- Button over the expand overlay -->
+            <button class="btn btn-sm pull-right copy-request" data-clipboard-target="#cURL_0_cba67178-a4ad-441b-9bf1-5ad01aadd68b" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button>
+          </div>
+    </div>
+
+      <div class="sample-response">
+        <div class="heading">
+          <span>Example Response</span>
+        </div>
+
+
+        <div class="responses-index">
+            <div class="response-status is-default" data-id="cba67178-a4ad-441b-9bf1-5ad01aadd68b_0">
+              <span>200 － OK</span>
+            </div>
+        </div>
+        <div class="responses code-snippet">
+              <div class="formatted-responses is-default" data-id="cba67178-a4ad-441b-9bf1-5ad01aadd68b_0" data-lang="json">
+                  <pre class="click-to-expand-wrapper is-snippet-wrapper is-example is-expandable  language-javascript" data-id="cba67178-a4ad-441b-9bf1-5ad01aadd68b_0" data-lang="json"><code class="language-javascript">{
+  "info": {
+    "balance": [
+      {
+        "rawName": "Ethereum",
+        "USD": "105.89659489",
+        "KRW": "118265.31717844",
+        "decAmount": "0.00000000",
+        "address": "0x0000000000000000000000000000000000000000",
+        "locked": {
+          "order": {</code></pre>
+              </div>
+        </div>
+      </div>
+</div>
+
+</div>
+      <div class="row row-no-padding row-eq-height" id="82707c34-d798-4909-aacd-d29ebf6eac8b">
+  <div class="col-md-6 col-xs-12 section">
+  <div class="api-information">
+    <div class="heading">
+      <div class="name">
+        <span class="POST method" title="POST">POST</span>
+        진행중인 주문 조회
+      </div>
+    </div>
+    <div class="url">https://api.allbit.com/open/v2/run-order-page</div>
+    <div class="description"><p>현재 진행중인 주문을 보여준다.</p>
+<hr>
+<h3 id="response">Response</h3>
+<div class="click-to-expand-wrapper is-table-wrapper"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pendingList</td>
+<td>주문 등록 대기중인 리스트</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>runningList</td>
+<td>미체결된 주문 리스트</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>price</td>
+<td>주문 가격</td>
+<td>String</td>
+</tr>
+<tr>
+<td>quoteCoin.id</td>
+<td>기축 토큰 ID</td>
+<td>String</td>
+</tr>
+<tr>
+<td>quoteCoin.name</td>
+<td>기축 토큰 이름</td>
+<td>String</td>
+</tr>
+<tr>
+<td>decAmount</td>
+<td>주문 수량 (Decimal 적용)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>id</td>
+<td>주문 ID</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>cancelSubmitted</td>
+<td>취소 요청이 접수된 주문 여부</td>
+<td>Boolean</td>
+</tr>
+<tr>
+<td>fill</td>
+<td>이미 체결된 수량</td>
+<td>String</td>
+</tr>
+<tr>
+<td>ohash</td>
+<td>주문 Hash</td>
+<td>String</td>
+</tr>
+<tr>
+<td>isCancel</td>
+<td>취소된 주문 여부</td>
+<td>Boolean</td>
+</tr>
+<tr>
+<td>decPrice</td>
+<td>주문 가격(Decimal 적용)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>주문 수량</td>
+<td>String</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>시간</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>baseCoin.id</td>
+<td>주문한 토큰 ID</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>baseCoin.name</td>
+<td>주문한 토큰 이름</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>isSell</td>
+<td>매도 주문 여부</td>
+<td>Number</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+
+      <div class="headers">
+        <div class="heading">HEADERS</div>
+        <hr>
+          <div class="param row">
+            <div class="name col-md-3 col-xs-12">Content-Type</div>
+            <div class="value col-md-9 col-xs-12">application/x-www-form-urlencoded</div>
+          </div>
+      </div>
+
+
+
+      <div class="request-body">
+        <div class="body-heading">BODY</div>
+
+            <hr>
+              <div class="param row">
+                <div class="name col-md-3 col-xs-12">apiKey</div>
+                <div class="value col-md-9 col-xs-12">발급받은 API Key</div>
+                  <div class="description col-md-9 col-xs-12"><p>*Required</p>
+</div>
+              </div>
+              <div class="param row">
+                <div class="name col-md-3 col-xs-12">wallet</div>
+                <div class="value col-md-9 col-xs-12">Allbit 지갑주소</div>
+                  <div class="description col-md-9 col-xs-12"><p>*Required</p>
+</div>
+              </div>
+      </div>
+
+  </div>
+  <br><br>
+</div>
+
+
+  <div class="col-md-6 col-xs-12 examples">
+    <div class="sample-request">
+      <div class="heading"><span>Example Request</span></div>
+
+      <div class="responses-index">
+          <div class="response-name"><span>진행중인 주문 조회</span></div>
+      </div>
+    </div>
+
+    <div class="request code-snippet">
+          <div class="formatted-requests is-default" data-lang="cURL" data-id="82707c34-d798-4909-aacd-d29ebf6eac8b_0">
+            <pre class="click-to-expand-wrapper is-snippet-wrapper language-javascript"><button class="btn btn-sm pull-right copy-request copy-request-modal" data-clipboard-target="#cURL_0_82707c34-d798-4909-aacd-d29ebf6eac8b" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button><code class="language-javascript" id="cURL_0_82707c34-d798-4909-aacd-d29ebf6eac8b">curl --location --request POST "https://api.allbit.com/open/v2/run-order-page" \
+  --header "Content-Type: application/x-www-form-urlencoded" \
+  --header "Accept: application/json" \
+  --data "apiKey=HORYrlFVUHJuZ6VNXVmNjm6VJ0EONqZn23gUBMggTSAQxdy17XCx0nHguKuThAgyNSb6qRdIC3iLkxdSyVkp90tQc1SBuvmGWJjygjMhmLgtDZxjKZp2iIJReUjm3Htl&amp;wallet=0xfaa8ed1fbac594dd017121df8ebd4fe2bea9016f"</code></pre>
+            <!-- Button over the expand overlay -->
+            <button class="btn btn-sm pull-right copy-request" data-clipboard-target="#cURL_0_82707c34-d798-4909-aacd-d29ebf6eac8b" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button>
+          </div>
+    </div>
+
+      <div class="sample-response">
+        <div class="heading">
+          <span>Example Response</span>
+        </div>
+
+
+        <div class="responses-index">
+            <div class="response-status is-default" data-id="82707c34-d798-4909-aacd-d29ebf6eac8b_0">
+              <span>200 － OK</span>
+            </div>
+        </div>
+        <div class="responses code-snippet">
+              <div class="formatted-responses is-default" data-id="82707c34-d798-4909-aacd-d29ebf6eac8b_0" data-lang="json">
+                  <pre class="click-to-expand-wrapper is-snippet-wrapper is-example" data-id="82707c34-d798-4909-aacd-d29ebf6eac8b_0" data-lang="json"><code class="language-javascript">{
+  "info": {
+    "pendingList": [],
+    "runningList": [
+      {
+        "price": "100000000000000000",
+        "quoteCoin": {
+          "id": 2,
+          "name": "APOT"
+        },
+        "decAmount": "12000.00000000",</code></pre>
+              </div>
+        </div>
+      </div>
+</div>
+
+</div>
+      <div class="row row-no-padding row-eq-height" id="4f3aab8b-4fe9-45c2-a725-529d24507db4">
+  <div class="col-md-6 col-xs-12 section">
+  <div class="api-information">
+    <div class="heading">
+      <div class="name">
+        <span class="POST method" title="POST">POST</span>
+        주문 정보 조회
+      </div>
+    </div>
+    <div class="url">https://api.allbit.com/open/v2/order-status</div>
+    <div class="description"><p>특정 주문의 현재 상태 및 정보를 보여준다.</p>
+<hr>
+<h3 id="response">Response</h3>
+<div class="click-to-expand-wrapper is-table-wrapper is-expandable"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status</td>
+<td>주문 상태 코드</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>price</td>
+<td>주문 가격</td>
+<td>String</td>
+</tr>
+<tr>
+<td>quoteCoin.id</td>
+<td>기축 토큰 ID</td>
+<td>String</td>
+</tr>
+<tr>
+<td>quoteCoin.name</td>
+<td>기축 토큰 이름</td>
+<td>String</td>
+</tr>
+<tr>
+<td>decAmount</td>
+<td>주문 수량 (Decimal 적용)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>id</td>
+<td>주문 ID</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>cancelSubmitted</td>
+<td>취소 요청이 접수된 주문 여부</td>
+<td>Boolean</td>
+</tr>
+<tr>
+<td>fill</td>
+<td>이미 체결된 수량</td>
+<td>String</td>
+</tr>
+<tr>
+<td>ohash</td>
+<td>주문 Hash</td>
+<td>String</td>
+</tr>
+<tr>
+<td>isCancel</td>
+<td>취소된 주문 여부</td>
+<td>Boolean</td>
+</tr>
+<tr>
+<td>decPrice</td>
+<td>주문 가격(Decimal 적용)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>주문 수량</td>
+<td>String</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>시간</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>baseCoin.id</td>
+<td>주문한 토큰 ID</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>baseCoin.name</td>
+<td>주문한 토큰 이름</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>isSell</td>
+<td>매도 주문 여부</td>
+<td>Number</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+
+      <div class="headers">
+        <div class="heading">HEADERS</div>
+        <hr>
+          <div class="param row">
+            <div class="name col-md-3 col-xs-12">Content-Type</div>
+            <div class="value col-md-9 col-xs-12">application/x-www-form-urlencoded</div>
+          </div>
+      </div>
+
+
+
+      <div class="request-body">
+        <div class="body-heading">BODY</div>
+
+            <hr>
+              <div class="param row">
+                <div class="name col-md-3 col-xs-12">orders</div>
+                <div class="value col-md-9 col-xs-12">주문 해시(ohash) 배열</div>
+                  <div class="description col-md-9 col-xs-12"><p>*Required</p>
+</div>
+              </div>
+      </div>
+
+  </div>
+  <br><br>
+</div>
+
+
+  <div class="col-md-6 col-xs-12 examples">
+    <div class="sample-request">
+      <div class="heading"><span>Example Request</span></div>
+
+      <div class="responses-index">
+          <div class="response-name"><span>주문 정보 조회</span></div>
+      </div>
+    </div>
+
+    <div class="request code-snippet">
+          <div class="formatted-requests is-default" data-lang="cURL" data-id="4f3aab8b-4fe9-45c2-a725-529d24507db4_0">
+            <pre class="click-to-expand-wrapper is-snippet-wrapper"><button class="btn btn-sm pull-right copy-request copy-request-modal" data-clipboard-target="#cURL_0_4f3aab8b-4fe9-45c2-a725-529d24507db4" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button><code class="language-javascript" id="cURL_0_4f3aab8b-4fe9-45c2-a725-529d24507db4">curl --location --request POST "https://api.allbit.com/open/v2/order-status" \
+  --header "Content-Type: application/x-www-form-urlencoded" \
+  --header "Accept: application/json" \
+  --data "orders=%5B%220xc074f8810a3bded6a4a96a84aed8e3813db168ca8c05a0d481377d2b6225735a%22%5D"</code></pre>
+            <!-- Button over the expand overlay -->
+            <button class="btn btn-sm pull-right copy-request" data-clipboard-target="#cURL_0_4f3aab8b-4fe9-45c2-a725-529d24507db4" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button>
+          </div>
+    </div>
+
+      <div class="sample-response">
+        <div class="heading">
+          <span>Example Response</span>
+        </div>
+
+
+        <div class="responses-index">
+            <div class="response-status is-default" data-id="4f3aab8b-4fe9-45c2-a725-529d24507db4_0">
+              <span>200 － OK</span>
+            </div>
+        </div>
+        <div class="responses code-snippet">
+              <div class="formatted-responses is-default" data-id="4f3aab8b-4fe9-45c2-a725-529d24507db4_0" data-lang="json">
+                  <pre class="click-to-expand-wrapper is-snippet-wrapper is-example" data-id="4f3aab8b-4fe9-45c2-a725-529d24507db4_0" data-lang="json"><code class="language-javascript">{
+  "info": [
+    {
+      "info": {
+        "status": 1,
+        "price": "100000000000000000",
+        "quoteCoin": {
+          "id": 2,
+          "name": "APOT"
+        },
+        "decAmount": "12000.00000000",</code></pre>
+              </div>
+        </div>
+      </div>
+</div>
+
+</div>
+      <div class="row row-no-padding row-eq-height" id="72f8e12b-ad28-43b4-90b6-e31b7cacec8f">
+  <div class="col-md-6 col-xs-12 section">
+  <div class="api-information">
+    <div class="heading">
+      <div class="name">
+        <span class="POST method" title="POST">POST</span>
+        주문 메시지 생성
+      </div>
+    </div>
+    <div class="url">https://api.allbit.com/open/v2/generate-order</div>
+    <div class="description"><p>주문 등록을 위해 서명할 메시지를 생성한다.</p>
+<hr>
+<h3 id="response">Response</h3>
+<div class="click-to-expand-wrapper is-table-wrapper"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>actionHash</td>
+<td>서명해야 할 메시지</td>
+<td>String</td>
+</tr>
+<tr>
+<td>keystore</td>
+<td>서명할 지갑의 Keystore</td>
+<td>JSON String</td>
+</tr>
+<tr>
+<td>action</td>
+<td>Action ID</td>
+<td>Number</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+
+      <div class="headers">
+        <div class="heading">HEADERS</div>
+        <hr>
+          <div class="param row">
+            <div class="name col-md-3 col-xs-12">Content-Type</div>
+            <div class="value col-md-9 col-xs-12">application/json</div>
+          </div>
+      </div>
+
+
+
+      <div class="request-body">
+        <div class="body-heading">BODY</div>
+          <hr>
+          <div class="raw-body code-snippet">
+            <pre class="body-block click-to-expand-wrapper is-snippet-wrapper  language-javascript"><code class="body-block is-highlighted language-javascript"><span class="token punctuation">{</span>
+    <span class="token string">"apiKey"</span><span class="token punctuation">:</span> 발급받은 API Key<span class="token punctuation">,</span>
+    <span class="token string">"wallet"</span><span class="token punctuation">:</span> Allbit 지갑주소<span class="token punctuation">,</span>
+    <span class="token string">"orders"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token string">"pair"</span><span class="token punctuation">:</span> Pair ID<span class="token punctuation">,</span>
+            <span class="token string">"isSell"</span><span class="token punctuation">:</span> 매도 주문 여부 <span class="token punctuation">(</span>Boolean<span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token string">"price"</span><span class="token punctuation">:</span> 가격<span class="token punctuation">,</span>
+            <span class="token string">"amount"</span><span class="token punctuation">:</span> 수량 <span class="token punctuation">(</span>Decimal 미적용<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span></code></pre>
+          </div>
+
+      </div>
+
+  </div>
+  <br><br>
+</div>
+
+
+  <div class="col-md-6 col-xs-12 examples">
+    <div class="sample-request">
+      <div class="heading"><span>Example Request</span></div>
+
+      <div class="responses-index">
+          <div class="response-name"><span>주문 메시지 생성</span></div>
+      </div>
+    </div>
+
+    <div class="request code-snippet">
+          <div class="formatted-requests is-default" data-lang="cURL" data-id="72f8e12b-ad28-43b4-90b6-e31b7cacec8f_0">
+            <pre class="click-to-expand-wrapper is-snippet-wrapper is-expandable  language-javascript"><button class="btn btn-sm pull-right copy-request copy-request-modal" data-clipboard-target="#cURL_0_72f8e12b-ad28-43b4-90b6-e31b7cacec8f" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button><code class=" is-highlighted language-javascript" id="cURL_0_72f8e12b-ad28-43b4-90b6-e31b7cacec8f">curl <span class="token operator">--</span>location <span class="token operator">--</span>request POST <span class="token string">"https://api.allbit.com/open/v2/generate-order"</span> \
+  <span class="token operator">--</span>header <span class="token string">"Content-Type: application/json"</span> \
+  <span class="token operator">--</span>header <span class="token string">"Accept: application/json"</span> \
+  <span class="token operator">--</span>data "<span class="token punctuation">{</span>
+  \"apiKey\"<span class="token punctuation">:</span> \"HORYrlFVUHJuZ6VNXVmNjm6VJ0EONqZn23gUBMggTSAQxdy17XCx0nHguKuThAgyNSb6qRdIC3iLkxdSyVkp90tQc1SBuvmGWJjygjMhmLgtDZxjKZp2iIJReUjm3Htl\"<span class="token punctuation">,</span>
+  \"wallet\"<span class="token punctuation">:</span> \"<span class="token number">0xfaa8ed1fbac594dd017121df8ebd4fe2bea9016f</span>\"<span class="token punctuation">,</span>
+  \"orders\"<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      \"pair\"<span class="token punctuation">:</span> <span class="token number">14</span><span class="token punctuation">,</span>
+      \"isSell\"<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      \"price\"<span class="token punctuation">:</span> \"<span class="token number">1.000</span>\"<span class="token punctuation">,</span>
+      \"amount\"<span class="token punctuation">:</span> \"<span class="token number">1000000000000000000000</span>\"
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      \"pair\"<span class="token punctuation">:</span> <span class="token number">14</span><span class="token punctuation">,</span>
+      \"isSell\"<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      \"price\"<span class="token punctuation">:</span> \"<span class="token number">1.000</span>\"<span class="token punctuation">,</span>
+      \"amount\"<span class="token punctuation">:</span> \"<span class="token number">1000000000000000000000</span>\"
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>"</code></pre>
+            <!-- Button over the expand overlay -->
+            <button class="btn btn-sm pull-right copy-request" data-clipboard-target="#cURL_0_72f8e12b-ad28-43b4-90b6-e31b7cacec8f" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button>
+          </div>
+    </div>
+
+      <div class="sample-response">
+        <div class="heading">
+          <span>Example Response</span>
+        </div>
+
+
+        <div class="responses-index">
+            <div class="response-status is-default" data-id="72f8e12b-ad28-43b4-90b6-e31b7cacec8f_0">
+              <span>200 － OK</span>
+            </div>
+        </div>
+        <div class="responses code-snippet">
+              <div class="formatted-responses is-default" data-id="72f8e12b-ad28-43b4-90b6-e31b7cacec8f_0" data-lang="json">
+                  <pre class="click-to-expand-wrapper is-snippet-wrapper is-example is-expandable  language-javascript" data-id="72f8e12b-ad28-43b4-90b6-e31b7cacec8f_0" data-lang="json"><code class=" is-highlighted language-javascript"><span class="token punctuation">{</span>
+  <span class="token string">"info"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">"info"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">"actionHash"</span><span class="token punctuation">:</span> <span class="token string">"0x457102ea07fbddad71191cfc137dbf7a278aafcb3e4617269f624553462278f6"</span><span class="token punctuation">,</span>
+        <span class="token string">"keystore"</span><span class="token punctuation">:</span> <span class="token string">"{\"version\":3,\"id\":\"a3859ed7-d94f-41b8-bb29-7bdf1ad66ee5\",\"address\":\"0xfaa8ed1fbac594dd017121df8ebd4fe2bea9016f\",\"crypto\":{\"ciphertext\":\"824a1ec55b9af8209405397a1c8ded796255f96a218ee58ebffa94d8b7cca7b0\",\"cipherparams\":{\"iv\":\"57451d852d4a3a6bc6d5b3f6dd51619a\"},\"cipher\":\"aes-128-ctr\",\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"salt\":\"8e20aed7bc8128a61474093989c3f642404f1f72b7cb9f3b0a2b3d7d2509e4da\",\"n\":8192,\"r\":8,\"p\":1},\"mac\":\"bfe28ae26e0e09bb7590b347cbdfbdb72b1f02bfd0e5de46b977f4de683a7682\"},\"provider\":{\"name\":\"allbit\",\"version\":1}}"</span><span class="token punctuation">,</span>
+        <span class="token string">"action"</span><span class="token punctuation">:</span> <span class="token number">1</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token string">"result"</span><span class="token punctuation">:</span> <span class="token string">"success"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span></code></pre>
+              </div>
+        </div>
+      </div>
+</div>
+
+</div>
+      <div class="row row-no-padding row-eq-height" id="403d27dc-4a0b-4546-9353-4865972cefdf">
+  <div class="col-md-6 col-xs-12 section">
+  <div class="api-information">
+    <div class="heading">
+      <div class="name">
+        <span class="POST method" title="POST">POST</span>
+        주문 취소 메시지 생성
+      </div>
+    </div>
+    <div class="url">https://api.allbit.com/open/v2/cancel-order</div>
+    <div class="description"><p>주문 취소를 위해 서명할 메시지를 생성한다.</p>
+<hr>
+<h3 id="response">Response</h3>
+<div class="click-to-expand-wrapper is-table-wrapper"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>actionHash</td>
+<td>서명해야 할 메시지</td>
+<td>String</td>
+</tr>
+<tr>
+<td>keystore</td>
+<td>서명할 지갑의 Keystore</td>
+<td>JSON String</td>
+</tr>
+<tr>
+<td>action</td>
+<td>Action ID</td>
+<td>Number</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+
+      <div class="headers">
+        <div class="heading">HEADERS</div>
+        <hr>
+          <div class="param row">
+            <div class="name col-md-3 col-xs-12">Content-Type</div>
+            <div class="value col-md-9 col-xs-12">application/json</div>
+          </div>
+      </div>
+
+
+
+      <div class="request-body">
+        <div class="body-heading">BODY</div>
+          <hr>
+          <div class="raw-body code-snippet">
+            <pre class="body-block click-to-expand-wrapper is-snippet-wrapper  language-javascript"><code class="body-block is-highlighted language-javascript"><span class="token punctuation">{</span>
+  <span class="token string">"apiKey"</span><span class="token punctuation">:</span> 발급받은 API Key<span class="token punctuation">,</span>
+  <span class="token string">"wallet"</span><span class="token punctuation">:</span> Allbit 지갑주소<span class="token punctuation">,</span>
+  <span class="token string">"orders"</span><span class="token punctuation">:</span> 주문 <span class="token function">해시</span><span class="token punctuation">(</span>ohash<span class="token punctuation">)</span> 배열
+<span class="token punctuation">}</span></code></pre>
+          </div>
+
+      </div>
+
+  </div>
+  <br><br>
+</div>
+
+
+  <div class="col-md-6 col-xs-12 examples">
+    <div class="sample-request">
+      <div class="heading"><span>Example Request</span></div>
+
+      <div class="responses-index">
+          <div class="response-name"><span>주문 취소 메시지 생성</span></div>
+      </div>
+    </div>
+
+    <div class="request code-snippet">
+          <div class="formatted-requests is-default" data-lang="cURL" data-id="403d27dc-4a0b-4546-9353-4865972cefdf_0">
+            <pre class="click-to-expand-wrapper is-snippet-wrapper  language-javascript"><button class="btn btn-sm pull-right copy-request copy-request-modal" data-clipboard-target="#cURL_0_403d27dc-4a0b-4546-9353-4865972cefdf" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button><code class=" is-highlighted language-javascript" id="cURL_0_403d27dc-4a0b-4546-9353-4865972cefdf">curl <span class="token operator">--</span>location <span class="token operator">--</span>request POST <span class="token string">"https://api.allbit.com/open/v2/cancel-order"</span> \
+  <span class="token operator">--</span>header <span class="token string">"Accept: application/json"</span> \
+  <span class="token operator">--</span>header <span class="token string">"Content-Type: application/json"</span> \
+  <span class="token operator">--</span>data "<span class="token punctuation">{</span>
+  \"apiKey\"<span class="token punctuation">:</span> \"HORYrlFVUHJuZ6VNXVmNjm6VJ0EONqZn23gUBMggTSAQxdy17XCx0nHguKuThAgyNSb6qRdIC3iLkxdSyVkp90tQc1SBuvmGWJjygjMhmLgtDZxjKZp2iIJReUjm3Htl\"<span class="token punctuation">,</span>
+  \"wallet\"<span class="token punctuation">:</span> \"<span class="token number">0xfaa8ed1fbac594dd017121df8ebd4fe2bea9016f</span>\"<span class="token punctuation">,</span>
+  \"orders\"<span class="token punctuation">:</span> <span class="token punctuation">[</span>\"<span class="token number">0x000713e6e94042585c348b38b00ef810ae1756e38e04cc01e6329a8334f05ea5</span>\"<span class="token punctuation">]</span>
+<span class="token punctuation">}</span>"</code></pre>
+            <!-- Button over the expand overlay -->
+            <button class="btn btn-sm pull-right copy-request" data-clipboard-target="#cURL_0_403d27dc-4a0b-4546-9353-4865972cefdf" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button>
+          </div>
+    </div>
+
+      <div class="sample-response">
+        <div class="heading">
+          <span>Example Response</span>
+        </div>
+
+
+        <div class="responses-index">
+            <div class="response-status is-default" data-id="403d27dc-4a0b-4546-9353-4865972cefdf_0">
+              <span>200 － OK</span>
+            </div>
+        </div>
+        <div class="responses code-snippet">
+              <div class="formatted-responses is-default" data-id="403d27dc-4a0b-4546-9353-4865972cefdf_0" data-lang="json">
+                  <pre class="click-to-expand-wrapper is-snippet-wrapper is-example  language-javascript" data-id="403d27dc-4a0b-4546-9353-4865972cefdf_0" data-lang="json"><code class=" is-highlighted language-javascript"><span class="token punctuation">{</span>
+  <span class="token string">"info"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">"info"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">"actionHash"</span><span class="token punctuation">:</span> <span class="token string">"0x78366a91de1ae94459b6cd7c3c63613a56aa25f43ac0e282139803985531f2f1"</span><span class="token punctuation">,</span>
+        <span class="token string">"keystore"</span><span class="token punctuation">:</span> <span class="token string">"{\"version\":3,\"id\":\"a3859ed7-d94f-41b8-bb29-7bdf1ad66ee5\",\"address\":\"0xfaa8ed1fbac594dd017121df8ebd4fe2bea9016f\",\"crypto\":{\"ciphertext\":\"824a1ec55b9af8209405397a1c8ded796255f96a218ee58ebffa94d8b7cca7b0\",\"cipherparams\":{\"iv\":\"57451d852d4a3a6bc6d5b3f6dd51619a\"},\"cipher\":\"aes-128-ctr\",\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"salt\":\"8e20aed7bc8128a61474093989c3f642404f1f72b7cb9f3b0a2b3d7d2509e4da\",\"n\":8192,\"r\":8,\"p\":1},\"mac\":\"bfe28ae26e0e09bb7590b347cbdfbdb72b1f02bfd0e5de46b977f4de683a7682\"},\"provider\":{\"name\":\"allbit\",\"version\":1}}"</span><span class="token punctuation">,</span>
+        <span class="token string">"action"</span><span class="token punctuation">:</span> <span class="token number">3</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token string">"result"</span><span class="token punctuation">:</span> <span class="token string">"success"</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span></code></pre>
+              </div>
+        </div>
+      </div>
+</div>
+
+</div>
+    <div class="row row-no-padding row-eq-height" id="5546d1b7-5757-4ef4-b00b-e90275e13ae0">
+    <div class="col-md-6 col-xs-12 section">
+    <div class="api-information">
+  <div class="folder-name"><p>QUOTATION API</p></div>
+  <div class="folder-description"><h3 id="pair-id">Pair ID</h3>
+<blockquote>
+<p>Pair ID는 마켓과 토큰에 따른 코드입니다.</p>
+</blockquote>
+<blockquote>
+<p>시세 조회 API에서는 요청 파라미터로 <code>pair</code>를 입력받습니다.</p>
+</blockquote>
+<blockquote>
+<p>Pair ID는 <em>토큰 리스트 조회 API</em> (<code>/v2/coin-info-graph-list</code>)에서 조회할 수 있습니다. (key: <code>pair_id</code>)</p>
+</blockquote>
+</div>
+</div>
+  </div>
+  <div class="col-md-6 col-xs-12 examples folder-examples"></div>
+</div>
+      <div class="row row-no-padding row-eq-height" id="a8f560c2-bd48-4e31-968e-24192cd0db3a">
+  <div class="col-md-6 col-xs-12 section">
+  <div class="api-information">
+    <div class="heading">
+      <div class="name">
+        <span class="GET method" title="GET">GET</span>
+        토큰 리스트 조회
+      </div>
+    </div>
+    <div class="url">https://api.allbit.com/open/v2/coin-info-graph-list</div>
+    <div class="description"><p>상장된 토큰의 리스트와 정보를 보여준다.</p>
+<hr>
+<h3 id="response">Response</h3>
+<div class="click-to-expand-wrapper is-table-wrapper"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>min_order</td>
+<td>최소 주문 금액</td>
+<td>String</td>
+</tr>
+<tr>
+<td><em>pair_id</em></td>
+<td>Pair ID</td>
+<td>String</td>
+</tr>
+<tr>
+<td>name</td>
+<td>토큰 심볼</td>
+<td>String</td>
+</tr>
+<tr>
+<td>raw_name</td>
+<td>토큰 이름</td>
+<td>String</td>
+</tr>
+<tr>
+<td>id</td>
+<td>토큰 ID</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>address</td>
+<td>토큰 주소</td>
+<td>String</td>
+</tr>
+<tr>
+<td>decimal</td>
+<td>토큰 소수점 정확도</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>today_high</td>
+<td>당일 고가</td>
+<td>String</td>
+</tr>
+<tr>
+<td>today_low</td>
+<td>당일 저가</td>
+<td>String</td>
+</tr>
+<tr>
+<td>price</td>
+<td>마지막 체결 가격</td>
+<td>String</td>
+</tr>
+<tr>
+<td>dailyprice</td>
+<td>전일 종가</td>
+<td>String</td>
+</tr>
+<tr>
+<td>price_decimal</td>
+<td>가격 소수점 정확도</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>quote_krw</td>
+<td>마지막 체결 가격 (KRW)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>quote_usd</td>
+<td>마지막 체결 가격 (USD)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>recent_quote</td>
+<td>24시간 거래 대금</td>
+<td>String</td>
+</tr>
+<tr>
+<td>recent_base</td>
+<td>24시간 거래량</td>
+<td>String</td>
+</tr>
+<tr>
+<td>taker_fee</td>
+<td>Taker 수수료</td>
+<td>String</td>
+</tr>
+<tr>
+<td>maker_fee</td>
+<td>Maker 수수료</td>
+<td>String</td>
+</tr>
+<tr>
+<td>icon</td>
+<td>토큰 아이콘 이미지 URL</td>
+<td>String</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+
+
+
+
+
+  </div>
+  <br><br>
+</div>
+
+
+  <div class="col-md-6 col-xs-12 examples">
+    <div class="sample-request">
+      <div class="heading"><span>Example Request</span></div>
+
+      <div class="responses-index">
+          <div class="response-name"><span>토큰 리스트 조회</span></div>
+      </div>
+    </div>
+
+    <div class="request code-snippet">
+          <div class="formatted-requests is-default" data-lang="cURL" data-id="a8f560c2-bd48-4e31-968e-24192cd0db3a_0">
+            <pre class="click-to-expand-wrapper is-snippet-wrapper  language-javascript"><button class="btn btn-sm pull-right copy-request copy-request-modal" data-clipboard-target="#cURL_0_a8f560c2-bd48-4e31-968e-24192cd0db3a" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button><code class="language-javascript" id="cURL_0_a8f560c2-bd48-4e31-968e-24192cd0db3a">curl --location --request GET "https://api.allbit.com/open/v2/coin-info-graph-list" \
+  --data ""</code></pre>
+            <!-- Button over the expand overlay -->
+            <button class="btn btn-sm pull-right copy-request" data-clipboard-target="#cURL_0_a8f560c2-bd48-4e31-968e-24192cd0db3a" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button>
+          </div>
+    </div>
+
+      <div class="sample-response">
+        <div class="heading">
+          <span>Example Response</span>
+        </div>
+
+
+        <div class="responses-index">
+            <div class="response-status is-default" data-id="a8f560c2-bd48-4e31-968e-24192cd0db3a_0">
+              <span>200 － OK</span>
+            </div>
+        </div>
+        <div class="responses code-snippet">
+              <div class="formatted-responses is-default" data-id="a8f560c2-bd48-4e31-968e-24192cd0db3a_0" data-lang="json">
+                  <pre class="click-to-expand-wrapper is-snippet-wrapper is-example  language-javascript" data-id="a8f560c2-bd48-4e31-968e-24192cd0db3a_0" data-lang="json"><code class="language-javascript">{
+  "info": {
+    "ETH": [
+      {
+        "min_order": "0.01000000",
+        "pair_id": 1,
+        "name": "APOT",
+        "raw_name": "APOT",
+        "today_low": "0.00010104",
+        "quote_krw": "118938.89354400",
+        "id": 3,</code></pre>
+              </div>
+        </div>
+      </div>
+</div>
+
+</div>
+      <div class="row row-no-padding row-eq-height" id="d1042b05-8ddb-4bda-8a6e-bd1426c5359d">
+  <div class="col-md-6 col-xs-12 section">
+  <div class="api-information">
+    <div class="heading">
+      <div class="name">
+        <span class="POST method" title="POST">POST</span>
+        호가 리스트 조회
+      </div>
+    </div>
+    <div class="url">https://api.allbit.com/open/v2/coin/order-list</div>
+    <div class="description"><p>Pair별 호가 리스트를 보여준다.</p>
+<hr>
+<h3 id="response">Response</h3>
+<div class="click-to-expand-wrapper is-table-wrapper"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>buyer</td>
+<td>매수 호가 배열</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>seller</td>
+<td>매도 호가 배열</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>price</td>
+<td>호가</td>
+<td>String</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>주문 수량</td>
+<td>String</td>
+</tr>
+<tr>
+<td>decAmount</td>
+<td>주문 수량 (Decimal 적용)</td>
+<td>String</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+
+      <div class="headers">
+        <div class="heading">HEADERS</div>
+        <hr>
+          <div class="param row">
+            <div class="name col-md-3 col-xs-12">Content-Type</div>
+            <div class="value col-md-9 col-xs-12">application/x-www-form-urlencoded</div>
+          </div>
+      </div>
+
+
+
+      <div class="request-body">
+        <div class="body-heading">BODY</div>
+
+            <hr>
+              <div class="param row">
+                <div class="name col-md-3 col-xs-12">pair</div>
+                <div class="value col-md-9 col-xs-12">Pair ID</div>
+                  <div class="description col-md-9 col-xs-12"><p>*Required  |  토큰 리스트 조회 API에서 조회 가능</p>
+</div>
+              </div>
+      </div>
+
+  </div>
+  <br><br>
+</div>
+
+
+  <div class="col-md-6 col-xs-12 examples">
+    <div class="sample-request">
+      <div class="heading"><span>Example Request</span></div>
+
+      <div class="responses-index">
+          <div class="response-name"><span>호가 리스트 조회</span></div>
+      </div>
+    </div>
+
+    <div class="request code-snippet">
+          <div class="formatted-requests is-default" data-lang="cURL" data-id="d1042b05-8ddb-4bda-8a6e-bd1426c5359d_0">
+            <pre class="click-to-expand-wrapper is-snippet-wrapper  language-javascript"><button class="btn btn-sm pull-right copy-request copy-request-modal" data-clipboard-target="#cURL_0_d1042b05-8ddb-4bda-8a6e-bd1426c5359d" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button><code class="language-javascript" id="cURL_0_d1042b05-8ddb-4bda-8a6e-bd1426c5359d">curl --location --request POST "https://api.allbit.com/open/v2/coin/order-list" \
+  --header "Content-Type: application/x-www-form-urlencoded" \
+  --header "Accept: application/json" \
+  --data "pair=30"</code></pre>
+            <!-- Button over the expand overlay -->
+            <button class="btn btn-sm pull-right copy-request" data-clipboard-target="#cURL_0_d1042b05-8ddb-4bda-8a6e-bd1426c5359d" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button>
+          </div>
+    </div>
+
+      <div class="sample-response">
+        <div class="heading">
+          <span>Example Response</span>
+        </div>
+
+
+        <div class="responses-index">
+            <div class="response-status is-default" data-id="d1042b05-8ddb-4bda-8a6e-bd1426c5359d_0">
+              <span>200 － OK</span>
+            </div>
+        </div>
+        <div class="responses code-snippet">
+              <div class="formatted-responses is-default" data-id="d1042b05-8ddb-4bda-8a6e-bd1426c5359d_0" data-lang="json">
+                  <pre class="click-to-expand-wrapper is-snippet-wrapper is-example language-javascript" data-id="d1042b05-8ddb-4bda-8a6e-bd1426c5359d_0" data-lang="json"><code class="language-javascript">{
+  "info": {
+    "buyer": [
+      {
+        "price": "0.35990000",
+        "amount": "117945582736250000000000",
+        "decAmount": "117945.5827"
+      },
+      {
+        "price": "0.32000000",
+        "amount": "60520361638360000000000",</code></pre>
+              </div>
+        </div>
+      </div>
+</div>
+
+</div>
+      <div class="row row-no-padding row-eq-height" id="91b0bafa-6e88-4992-a747-3cbde06c2398">
+  <div class="col-md-6 col-xs-12 section">
+  <div class="api-information">
+    <div class="heading">
+      <div class="name">
+        <span class="POST method" title="POST">POST</span>
+        체결 리스트 조회
+      </div>
+    </div>
+    <div class="url">https://api.allbit.com/open/v2/coin/trade-list</div>
+    <div class="description"><p>Pair별 체결 리스트를 보여준다.</p>
+<hr>
+<h3 id="response">Response</h3>
+<div class="click-to-expand-wrapper is-table-wrapper"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>is_sell</td>
+<td>매도 체결 여부 (1: 매도체결, 0: 매수체결)</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>thash</td>
+<td>체결된 트랜잭션 해시</td>
+<td>String</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>체결 수량</td>
+<td>String</td>
+</tr>
+<tr>
+<td>decAmount</td>
+<td>체결 수량 (Decimal 적용)</td>
+<td>String</td>
+</tr>
+<tr>
+<td>price</td>
+<td>체결 가격</td>
+<td>String</td>
+</tr>
+<tr>
+<td>buyer</td>
+<td>매수자 지갑 주소</td>
+<td>String</td>
+</tr>
+<tr>
+<td>seller</td>
+<td>매도자 지갑 주소</td>
+<td>String</td>
+</tr>
+</tbody>
+</table>
+</div><hr>
+<h3 id="is_sell">is_sell</h3>
+<div class="click-to-expand-wrapper is-table-wrapper"><table>
+<thead>
+<tr>
+<th>is_sell</th>
+<th>maker</th>
+<th>taker</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>seller</td>
+<td>buyer</td>
+</tr>
+<tr>
+<td>1</td>
+<td>buyer</td>
+<td>seller</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+
+      <div class="headers">
+        <div class="heading">HEADERS</div>
+        <hr>
+          <div class="param row">
+            <div class="name col-md-3 col-xs-12">Content-Type</div>
+            <div class="value col-md-9 col-xs-12">application/x-www-form-urlencoded</div>
+          </div>
+      </div>
+
+
+
+      <div class="request-body">
+        <div class="body-heading">BODY</div>
+
+            <hr>
+              <div class="param row">
+                <div class="name col-md-3 col-xs-12">pair</div>
+                <div class="value col-md-9 col-xs-12">Pair ID</div>
+                  <div class="description col-md-9 col-xs-12"><p>*Required  |  토큰 리스트 조회 API에서 조회 가능</p>
+</div>
+              </div>
+      </div>
+
+  </div>
+  <br><br>
+</div>
+
+
+  <div class="col-md-6 col-xs-12 examples">
+    <div class="sample-request">
+      <div class="heading"><span>Example Request</span></div>
+
+      <div class="responses-index">
+          <div class="response-name"><span>체결 리스트 조회</span></div>
+      </div>
+    </div>
+
+    <div class="request code-snippet">
+          <div class="formatted-requests is-default" data-lang="cURL" data-id="91b0bafa-6e88-4992-a747-3cbde06c2398_0">
+            <pre class="click-to-expand-wrapper is-snippet-wrapper"><button class="btn btn-sm pull-right copy-request copy-request-modal" data-clipboard-target="#cURL_0_91b0bafa-6e88-4992-a747-3cbde06c2398" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button><code class="language-javascript" id="cURL_0_91b0bafa-6e88-4992-a747-3cbde06c2398">curl --location --request POST "https://api.allbit.com/open/v2/coin/trade-list" \
+  --header "Accept: application/json" \
+  --header "Content-Type: multipart/form-data" \
+  --form "pair=30"</code></pre>
+            <!-- Button over the expand overlay -->
+            <button class="btn btn-sm pull-right copy-request" data-clipboard-target="#cURL_0_91b0bafa-6e88-4992-a747-3cbde06c2398" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button>
+          </div>
+    </div>
+
+      <div class="sample-response">
+        <div class="heading">
+          <span>Example Response</span>
+        </div>
+
+
+        <div class="responses-index">
+            <div class="response-status is-default" data-id="91b0bafa-6e88-4992-a747-3cbde06c2398_0">
+              <span>200 － OK</span>
+            </div>
+        </div>
+        <div class="responses code-snippet">
+              <div class="formatted-responses is-default" data-id="91b0bafa-6e88-4992-a747-3cbde06c2398_0" data-lang="json">
+                  <pre class="click-to-expand-wrapper is-snippet-wrapper is-example" data-id="91b0bafa-6e88-4992-a747-3cbde06c2398_0" data-lang="json"><code class="language-javascript">{
+  "info": [
+    {
+      "is_sell": 1,
+      "thash": "0xafb569034dfa3187f0924534497a23fc90a3f945e2623bc73eb8350eb9aba2c4",
+      "amount": "515063801970000000000",
+      "decAmount": "515.06380197",
+      "time": 1549532525,
+      "buyer": "0x677cf5324317b604de21a9a86c5879beaba2d3a0",
+      "price": "0.38250000",
+      "seller": "0xad2b660dad6be8e176b59e88cafa8fc0166d938a"</code></pre>
+              </div>
+        </div>
+      </div>
+</div>
+
+</div>
+    <div class="row row-no-padding row-eq-height" id="d25c59da-8d68-454c-a158-1e9dfa54ad83">
+    <div class="col-md-6 col-xs-12 section">
+    <div class="api-information">
+  <div class="folder-name"><p>TRANSACTION API</p></div>
+  <div class="folder-description"></div>
+</div>
+  </div>
+  <div class="col-md-6 col-xs-12 examples folder-examples"></div>
+</div>
+      <div class="row row-no-padding row-eq-height" id="7bd3cd9e-12b1-4558-a7de-bacade82206a">
+  <div class="col-md-6 col-xs-12 section">
+  <div class="api-information">
+    <div class="heading">
+      <div class="name">
+        <span class="POST method" title="POST">POST</span>
+        서명된 메시지 전송
+      </div>
+    </div>
+    <div class="url">https://api.allbit.com/open/v2/submit-signed-message</div>
+    <div class="description"><p>주문 등록 및 취소를 위해 생성 및 서명된 메시지를 전송한다.</p>
+<ul>
+<li><p>서명 방법</p>
+<ol>
+<li>주문 등록/취소 API를 통해 <code>actionHash</code> 조회, <code>action</code>을 요청시 입력</li>
+<li>web3 같이 Ethereum Util을 이용해 서명 (<code>\x19Ethereum Signed Message:\32</code>가 prefix여야 함.)</li>
+<li>서명 후 결과로 출력되는 <code>v</code>, <code>r</code>, <code>s</code> 값을 요청시 입력</li>
+</ol>
+</li>
+<li><p>Example (node.js)</p>
+<pre class="click-to-expand-wrapper is-snippet-wrapper is-expandable  language-undefined"><code class="language-undefined">  let privateKey = '0x4c0883a69102937d6231471b5dbb6204fe5129617082792ae468d01a3f362311';
+  let action = 1;
+  let actionHash = '0x000713e6e94042585c348b38b00ef810ae1756e38e04cc01e6329a8334f05ea5';
+
+  let sig = web3.eth.accounts.sign(actionHash, privateKey);
+
+  let msg = {};
+  msg.action = action;
+  msg.actionHash = actionHash;
+  msg.message = {
+      v: web3.utils.toHex(sig.v),
+      r: sig.r,
+      s: sig.s
+  }
+</code></pre></li>
+</ul>
+<hr>
+</div>
+
+      <div class="headers">
+        <div class="heading">HEADERS</div>
+        <hr>
+          <div class="param row">
+            <div class="name col-md-3 col-xs-12">Content-Type</div>
+            <div class="value col-md-9 col-xs-12">application/json</div>
+          </div>
+      </div>
+
+
+
+      <div class="request-body">
+        <div class="body-heading">BODY</div>
+          <hr>
+          <div class="raw-body code-snippet">
+            <pre class="body-block click-to-expand-wrapper is-snippet-wrapper  language-javascript"><code class="body-block language-javascript">{
+  "apiKey": 발급받은 API Key,
+  "wallet": Allbit 지갑주소,
+  "messages": [
+    {
+      "actionHash": 서명할 메시지,
+      "action": Action ID,
+      "message": {
+        "v": 서명 결과 V값 (1byte hex),
+        "r": 서명 결과 R값 (32byte hex),
+        "s": 서명 결과 S값 (32byte hex)
+      }
+    }
+  ]
+}</code></pre>
+          </div>
+
+      </div>
+
+  </div>
+  <br><br>
+</div>
+
+
+  <div class="col-md-6 col-xs-12 examples">
+    <div class="sample-request">
+      <div class="heading"><span>Example Request</span></div>
+
+      <div class="responses-index">
+          <div class="response-name"><span>서명된 메시지 전송</span></div>
+      </div>
+    </div>
+
+    <div class="request code-snippet">
+          <div class="formatted-requests is-default" data-lang="cURL" data-id="7bd3cd9e-12b1-4558-a7de-bacade82206a_0">
+            <pre class="click-to-expand-wrapper is-snippet-wrapper is-expandable  language-javascript"><button class="btn btn-sm pull-right copy-request copy-request-modal" data-clipboard-target="#cURL_0_7bd3cd9e-12b1-4558-a7de-bacade82206a" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button><code class="language-javascript" id="cURL_0_7bd3cd9e-12b1-4558-a7de-bacade82206a">curl --location --request POST "https://api.allbit.com/open/v2/submit-signed-message" \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --data "{
+  \"apiKey\": \"HORYrlFVUHJuZ6VNXVmNjm6VJ0EONqZn23gUBMggTSAQxdy17XCx0nHguKuThAgyNSb6qRdIC3iLkxdSyVkp90tQc1SBuvmGWJjygjMhmLgtDZxjKZp2iIJReUjm3Htl\",
+  \"wallet\": \"0xfaa8ed1fbac594dd017121df8ebd4fe2bea9016f\",
+  \"messages\": [
+    {
+      \"actionHash\": \"0x000713e6e94042585c348b38b00ef810ae1756e38e04cc01e6329a8334f05ea5\",
+      \"action\": 1,
+      \"message\": {
+        \"v\":\"0x1c\",
+        \"r\":\"0xd1cc64f21b5d5ba7a3e099c2089d27956a89ad483790688f614b4d5a75266fbe\",
+        \"s\":\"0x76ebe2c6da14bd35ce245cc93fd723e8a30fc06e787f6ef18f55c3b0463496a7\"
+      }
+    }
+  ]
+}"</code></pre>
+            <!-- Button over the expand overlay -->
+            <button class="btn btn-sm pull-right copy-request" data-clipboard-target="#cURL_0_7bd3cd9e-12b1-4558-a7de-bacade82206a" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button>
+          </div>
+    </div>
+
+</div>
+
+</div>
+</div>
+          </div>
+          <div class="no-gutter phantom-sidebar"></div>
+          <div class="no-gutter sidebar" id="nav-sidebar"><div class="collection-heading">
+  <p class="heading">Allbit Open API</p>
+</div>
+<ul class="nav navbar-nav" id="navbar-example">
+  <li class="request intro">
+  <a class="nav-link dropdown-item" href="#intro">
+    <div class="request-name">Introduction</div>
+  </a>
+</li>
+<li class="toc">
+  <ul></ul>
+</li>
+      <li class="folder clearfix open user-opened">
+  <div class="folder-label clearfix">
+    <div class="toggle-folder-collapse">
+      <div class="pm-doc-sprite pm-doc-sprite-triangle">
+      </div>
+    </div>
+    <div class="pm-doc-sprite pm-doc-sprite-folder"></div>
+    <div class="folder-link">
+      <a class="nav-link dropdown-item" href="#72b2122c-6a91-4818-a50c-03b2d7320408">
+        <div class="name truncate">
+          <span>EXCHANGE</span>
+        </div>
+      </a>
+    </div>
+  </div>
+  <ul class="display-requests user-opened">
+        <li class="request">
+  <div class="POST method" title="POST">
+  <span>POST</span>
+</div>
+<div class="request-name" title="전체 계좌 조회">
+  <a class="nav-link dropdown-item" href="#cba67178-a4ad-441b-9bf1-5ad01aadd68b">
+    <span>전체 계좌 조회</span>
+  </a>
+</div>
+</li>
+        <li class="request">
+  <div class="POST method" title="POST">
+  <span>POST</span>
+</div>
+<div class="request-name" title="진행중인 주문 조회">
+  <a class="nav-link dropdown-item" href="#82707c34-d798-4909-aacd-d29ebf6eac8b">
+    <span>진행중인 주문 조회</span>
+  </a>
+</div>
+</li>
+        <li class="request">
+  <div class="POST method" title="POST">
+  <span>POST</span>
+</div>
+<div class="request-name" title="주문 정보 조회">
+  <a class="nav-link dropdown-item" href="#4f3aab8b-4fe9-45c2-a725-529d24507db4">
+    <span>주문 정보 조회</span>
+  </a>
+</div>
+</li>
+        <li class="request">
+  <div class="POST method" title="POST">
+  <span>POST</span>
+</div>
+<div class="request-name" title="주문 메시지 생성">
+  <a class="nav-link dropdown-item" href="#72f8e12b-ad28-43b4-90b6-e31b7cacec8f">
+    <span>주문 메시지 생성</span>
+  </a>
+</div>
+</li>
+        <li class="request">
+  <div class="POST method" title="POST">
+  <span>POST</span>
+</div>
+<div class="request-name" title="주문 취소 메시지 생성">
+  <a class="nav-link dropdown-item" href="#403d27dc-4a0b-4546-9353-4865972cefdf">
+    <span>주문 취소 메시지 생성</span>
+  </a>
+</div>
+</li>
+  </ul>
+</li>
+      <li class="folder clearfix open user-opened">
+  <div class="folder-label clearfix">
+    <div class="toggle-folder-collapse">
+      <div class="pm-doc-sprite pm-doc-sprite-triangle">
+      </div>
+    </div>
+    <div class="pm-doc-sprite pm-doc-sprite-folder"></div>
+    <div class="folder-link">
+      <a class="nav-link dropdown-item" href="#5546d1b7-5757-4ef4-b00b-e90275e13ae0">
+        <div class="name truncate">
+          <span>QUOTATION API</span>
+        </div>
+      </a>
+    </div>
+  </div>
+  <ul class="display-requests user-opened">
+        <li class="request">
+  <div class="GET method" title="GET">
+  <span>GET</span>
+</div>
+<div class="request-name" title="토큰 리스트 조회">
+  <a class="nav-link dropdown-item" href="#a8f560c2-bd48-4e31-968e-24192cd0db3a">
+    <span>토큰 리스트 조회</span>
+  </a>
+</div>
+</li>
+        <li class="request">
+  <div class="POST method" title="POST">
+  <span>POST</span>
+</div>
+<div class="request-name" title="호가 리스트 조회">
+  <a class="nav-link dropdown-item" href="#d1042b05-8ddb-4bda-8a6e-bd1426c5359d">
+    <span>호가 리스트 조회</span>
+  </a>
+</div>
+</li>
+        <li class="request">
+  <div class="POST method" title="POST">
+  <span>POST</span>
+</div>
+<div class="request-name" title="체결 리스트 조회">
+  <a class="nav-link dropdown-item" href="#91b0bafa-6e88-4992-a747-3cbde06c2398">
+    <span>체결 리스트 조회</span>
+  </a>
+</div>
+</li>
+  </ul>
+</li>
+      <li class="folder clearfix open user-opened">
+  <div class="folder-label clearfix">
+    <div class="toggle-folder-collapse">
+      <div class="pm-doc-sprite pm-doc-sprite-triangle">
+      </div>
+    </div>
+    <div class="pm-doc-sprite pm-doc-sprite-folder"></div>
+    <div class="folder-link">
+      <a class="nav-link dropdown-item" href="#d25c59da-8d68-454c-a158-1e9dfa54ad83">
+        <div class="name truncate">
+          <span>TRANSACTION API</span>
+        </div>
+      </a>
+    </div>
+  </div>
+  <ul class="display-requests user-opened">
+        <li class="request">
+  <div class="POST method" title="POST">
+  <span>POST</span>
+</div>
+<div class="request-name" title="서명된 메시지 전송">
+  <a class="nav-link dropdown-item" href="#7bd3cd9e-12b1-4558-a7de-bacade82206a">
+    <span>서명된 메시지 전송</span>
+  </a>
+</div>
+</li>
+  </ul>
+</li>
+</ul></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.ravenjs.com/3.26.2/raven.min.js" nonce="" crossorigin="anonymous"></script>
+    <script src="/docs-assets/js/production.min.js" nonce="" id="script-data-scope" data-var-user-id="70318" data-var-environment="production" data-var-team-id="280190" data-var-host="" data-var-version="" data-var-sentry-dsn="https://714c749bafde4552896bc6298c2c28a6@sentry.postmanlabs.com/11"></script>
+
+  
+
+<script type="text/javascript" id="">(function(a,d){var b=!1,c=function(a){b||(dataLayer.push({event:"documenter_engaged"}),b=!0)};a.setTimeout(function(){a.addEventListener("click",c,!1);d.addEventListener("scroll",c,!1)},1E3)})(window,document);</script><script type="text/javascript" id="">var meta={};meta.url=google_tag_manager["GTM-KCKQFT"].macro(3);dataLayer.push({eventSource:"documenter",eventCategory:"documenter",eventAction:"view",eventLabel:google_tag_manager["GTM-KCKQFT"].macro(4),eventMeta:meta});</script><script type="text/javascript" id="">(function(){var eventData,request=new XMLHttpRequest,eventAPI={"production":"https://analytics.getpostman.com/event","staging":"https://analytics.getpostman-beta.com/event","beta":"https://analytics.getpostman-beta.com/event"},apiMethod="POST",thisEvent="documenter",thisEnv="production",EventSource=function(property,type,indexType){return{"type":type,"property":property,"indexType":indexType}},eventSources={"documenter":new EventSource("documenter","events-website","client-events"),
+"echo":new EventSource("echo","events-website","client-events")},populateIfDefined=function(dataKey,dataLayerValue){if(dataLayerValue&&dataLayerValue!=="undefined"&&dataLayerValue!=="null")eventData[dataKey]=dataLayerValue};thisEvent=eventSources[thisEvent];eventAPI=eventAPI[thisEnv];if(thisEvent&&eventAPI){eventData={"type":thisEvent.type,"indexType":thisEvent.indexType,"env":thisEnv,"property":thisEvent.property,"timestamp":(new Date).toISOString()};populateIfDefined("category","documenter");
+populateIfDefined("action","view");populateIfDefined("label","undefined");populateIfDefined("value","undefined");populateIfDefined("meta",google_tag_manager["GTM-KCKQFT"].macro(5));populateIfDefined("userId","undefined");populateIfDefined("teamId","undefined");if("undefined"==="run_in_postman")if(""&&""!=="undefined")eventData.meta={referrer:""};if(google_tag_manager["GTM-KCKQFT"].macro(6))console.log("Sending LS event:",
+eventData);eventData=btoa(JSON.stringify(eventData));request.open(apiMethod,eventAPI,true);setTimeout(function(){request.send(eventData)},0);dataLayer.push({"eventCategory":"","eventAction":"","eventLabel":"","eventValue":"","eventSource":"","eventMeta":{}})}})();</script><script type="text/javascript" id="">var meta={};meta.url=google_tag_manager["GTM-KCKQFT"].macro(10);dataLayer.push({eventSource:"documenter",eventCategory:"documenter",eventAction:"engage",eventLabel:google_tag_manager["GTM-KCKQFT"].macro(11),eventMeta:meta});</script><script type="text/javascript" id="">(function(){var eventData,request=new XMLHttpRequest,eventAPI={"production":"https://analytics.getpostman.com/event","staging":"https://analytics.getpostman-beta.com/event","beta":"https://analytics.getpostman-beta.com/event"},apiMethod="POST",thisEvent="documenter",thisEnv="production",EventSource=function(property,type,indexType){return{"type":type,"property":property,"indexType":indexType}},eventSources={"documenter":new EventSource("documenter","events-website","client-events"),
+"echo":new EventSource("echo","events-website","client-events")},populateIfDefined=function(dataKey,dataLayerValue){if(dataLayerValue&&dataLayerValue!=="undefined"&&dataLayerValue!=="null")eventData[dataKey]=dataLayerValue};thisEvent=eventSources[thisEvent];eventAPI=eventAPI[thisEnv];if(thisEvent&&eventAPI){eventData={"type":thisEvent.type,"indexType":thisEvent.indexType,"env":thisEnv,"property":thisEvent.property,"timestamp":(new Date).toISOString()};populateIfDefined("category","documenter");
+populateIfDefined("action","engage");populateIfDefined("label","undefined");populateIfDefined("value","");populateIfDefined("meta",google_tag_manager["GTM-KCKQFT"].macro(12));populateIfDefined("userId","undefined");populateIfDefined("teamId","undefined");if("undefined"==="run_in_postman")if(""&&""!=="undefined")eventData.meta={referrer:""};if(google_tag_manager["GTM-KCKQFT"].macro(13))console.log("Sending LS event:",
+eventData);eventData=btoa(JSON.stringify(eventData));request.open(apiMethod,eventAPI,true);setTimeout(function(){request.send(eventData)},0);dataLayer.push({"eventCategory":"","eventAction":"","eventLabel":"","eventValue":"","eventSource":"","eventMeta":{}})}})();</script></body></html>

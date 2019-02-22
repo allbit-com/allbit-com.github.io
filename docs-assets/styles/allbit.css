@@ -1,0 +1,78 @@
+.sidebar ul.nav li.folder ul {
+    display: block !important; 
+}
+
+.top-bar {
+    opacity: 0 !important;
+}
+
+.collection-heading > .heading {
+    margin-top: 80px !important;
+}
+
+li.request > .method {
+    margin-top: 4px !important;
+}
+
+.language-button {
+    border: none !important;
+    background: transparent !important;
+}
+
+.language-button > span {
+    display: none !important;
+}
+
+
+.pm-doc-sprite-folder {
+        background: url("data:image/svg+xml,%3Csvg width='23' height='24' viewBox='0 0 25 15' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd' opacity='.6'%3E%3Cpath d='M4.9 1h5.027c.24 0 .468.1.637.276l2.172 2.272c.17.177.398.276.637.276H21.1c.497 0 .9.42.9.94V16.03c0 .52-.403.97-.9.97H4.9c-.497 0-.9-.45-.9-.97V1.94c0-.518.403-.94.9-.94z'  fill='none'/%3E%3Cpath d='M4.9 1h5.027c.24 0 .468.1.637.276l2.172 2.272c.17.177.398.276.637.276H21.1c.497 0 .9.42.9.94V16.03c0 .52-.403.97-.9.97H4.9c-.497 0-.9-.45-.9-.97V1.94c0-.518.403-.94.9-.94z' stroke='%236DCBE6' stroke-width='2'/%3E%3Cpath d='M3.22 16.358l-2.18-7.2C.863 8.58 1.3 8 1.91 8h21.18c.61 0 1.046.58.87 1.158l-2.18 7.2c-.115.38-.468.642-.87.642H4.09c-.402 0-.755-.26-.87-.642z' fill='%23F8F8F8'/%3E%3Cpath d='M3.22 16.358l-2.18-7.2C.863 8.58 1.3 8 1.91 8h21.18c.61 0 1.046.58.87 1.158l-2.18 7.2c-.115.38-.468.642-.87.642H4.09c-.402 0-.755-.26-.87-.642z' stroke='%236DCBE6' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E") no-repeat !important;
+}
+
+.row .api-information .heading .method.POST {
+    background: #f5a623;
+    font-weight: bold;
+    color: white;
+    padding: 1px 5px 1px 5px;
+    border-radius: 6px;
+}
+
+.row .api-information .heading .method.GET {
+    background: #3eb63e;
+    font-weight: bold;
+    color: white;
+    padding: 1px 5px 1px 5px;
+    border-radius: 6px;
+}
+
+.description .click-to-expand-wrapper {
+    height: auto;
+    max-height: initial;
+}
+
+.click-to-expand-wrapper.is-snippet-wrapper {
+    overflow-y: scroll !important; 
+}
+
+.click-to-expand-wrapper.is-snippet-wrapper::after {
+    opacity: 0 !important;
+}
+
+.param > div {
+    font-size: 14px !important;
+}
+
+.toggle-folder-collapse > div{
+    display: none !important;
+}
+
+table {
+    font-size: 14px !important;
+}
+
+.collection-name > p {
+    display: none !important;
+}
+
+.copy-request {
+    display: none !important; 
+}
