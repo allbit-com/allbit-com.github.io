@@ -231,7 +231,7 @@ When the API KEY is not valid:
 <h3 id="error-message">Error message</h3>
 <ul>
 <li><p>When the API KEY is not valid:</p>
-<pre class="click-to-expand-wrapper is-snippet-wrapper language-undefined"><code class="language-undefined">  {
+<pre class="click-to-expand-wrapper is-snippet-wrapper language-undefined"><code class="is-highlighted language-undefined">  {
       "info": "invalid_api_key",
       "result": "fail"
   }
@@ -284,7 +284,7 @@ When the API KEY is not valid:
     <div class="heading">
       <div class="name">
         <span class="POST method" title="POST">POST</span>
-        Get account info
+        Get Account Info
       </div>
     </div>
     <div class="url">https://api.allbit.com/open/v2/coin-amount</div>
@@ -464,9 +464,9 @@ When the API KEY is not valid:
 
     <div class="request code-snippet">
           <div class="formatted-requests is-default" data-lang="cURL" data-id="983db0d9-a9b5-4675-b2af-bec92ba3a251_0">
-            <pre class="click-to-expand-wrapper is-snippet-wrapper language-javascript"><button class="btn btn-sm pull-right copy-request copy-request-modal" data-clipboard-target="#cURL_0_983db0d9-a9b5-4675-b2af-bec92ba3a251" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button><code class="language-javascript" id="cURL_0_983db0d9-a9b5-4675-b2af-bec92ba3a251">curl --location --request POST "https://api.allbit.com/open/v2/coin-amount" \
-  --header "Content-Type: application/x-www-form-urlencoded" \
-  --data "apiKey=HORYrlFVUHJuZ6VNXVmNjm6VJ0EONqZn23gUBMggTSAQxdy17XCx0nHguKuThAgyNSb6qRdIC3iLkxdSyVkp90tQc1SBuvmGWJjygjMhmLgtDZxjKZp2iIJReUjm3Htl&amp;wallet=0xfaa8ed1fbac594dd017121df8ebd4fe2bea9016f"</code></pre>
+            <pre class="click-to-expand-wrapper is-snippet-wrapper language-javascript"><button class="btn btn-sm pull-right copy-request copy-request-modal" data-clipboard-target="#cURL_0_983db0d9-a9b5-4675-b2af-bec92ba3a251" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button><code class=" is-highlighted language-javascript" id="cURL_0_983db0d9-a9b5-4675-b2af-bec92ba3a251">curl <span class="token operator">--</span>location <span class="token operator">--</span>request POST <span class="token string">"https://api.allbit.com/open/v2/coin-amount"</span> \
+  <span class="token operator">--</span>header <span class="token string">"Content-Type: application/x-www-form-urlencoded"</span> \
+  <span class="token operator">--</span>data <span class="token string">"apiKey=HORYrlFVUHJuZ6VNXVmNjm6VJ0EONqZn23gUBMggTSAQxdy17XCx0nHguKuThAgyNSb6qRdIC3iLkxdSyVkp90tQc1SBuvmGWJjygjMhmLgtDZxjKZp2iIJReUjm3Htl&amp;wallet=0xfaa8ed1fbac594dd017121df8ebd4fe2bea9016f"</span></code></pre>
             <!-- Button over the expand overlay -->
             <button class="btn btn-sm pull-right copy-request" data-clipboard-target="#cURL_0_983db0d9-a9b5-4675-b2af-bec92ba3a251" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button>
           </div>
@@ -485,17 +485,17 @@ When the API KEY is not valid:
         </div>
         <div class="responses code-snippet">
               <div class="formatted-responses is-default" data-id="983db0d9-a9b5-4675-b2af-bec92ba3a251_0" data-lang="json">
-                  <pre class="click-to-expand-wrapper is-snippet-wrapper is-example language-javascript" data-id="983db0d9-a9b5-4675-b2af-bec92ba3a251_0" data-lang="json"><code class="language-javascript">{
-  "info": {
-    "balance": [
-      {
-        "rawName": "Ethereum",
-        "USD": "105.89659489",
-        "KRW": "118265.31717844",
-        "decAmount": "0.00000000",
-        "address": "0x0000000000000000000000000000000000000000",
-        "locked": {
-          "order": {</code></pre>
+                  <pre class="click-to-expand-wrapper is-snippet-wrapper is-example language-javascript" data-id="983db0d9-a9b5-4675-b2af-bec92ba3a251_0" data-lang="json"><code class=" is-highlighted language-javascript"><span class="token punctuation">{</span>
+  <span class="token string">"info"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">"balance"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token string">"rawName"</span><span class="token punctuation">:</span> <span class="token string">"Ethereum"</span><span class="token punctuation">,</span>
+        <span class="token string">"USD"</span><span class="token punctuation">:</span> <span class="token string">"105.89659489"</span><span class="token punctuation">,</span>
+        <span class="token string">"KRW"</span><span class="token punctuation">:</span> <span class="token string">"118265.31717844"</span><span class="token punctuation">,</span>
+        <span class="token string">"decAmount"</span><span class="token punctuation">:</span> <span class="token string">"0.00000000"</span><span class="token punctuation">,</span>
+        <span class="token string">"address"</span><span class="token punctuation">:</span> <span class="token string">"0x0000000000000000000000000000000000000000"</span><span class="token punctuation">,</span>
+        <span class="token string">"locked"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          <span class="token string">"order"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span></code></pre>
               </div>
         </div>
       </div>
@@ -508,7 +508,7 @@ When the API KEY is not valid:
     <div class="heading">
       <div class="name">
         <span class="POST method" title="POST">POST</span>
-        Get run order list
+        Get Run Order List
       </div>
     </div>
     <div class="url">https://api.allbit.com/open/v2/run-order-page</div>
@@ -703,7 +703,7 @@ When the API KEY is not valid:
     <div class="heading">
       <div class="name">
         <span class="POST method" title="POST">POST</span>
-        Get order status
+        Get Order Status
       </div>
     </div>
     <div class="url">https://api.allbit.com/open/v2/order-status</div>
@@ -887,7 +887,7 @@ When the API KEY is not valid:
     <div class="heading">
       <div class="name">
         <span class="POST method" title="POST">POST</span>
-        Generate order message
+        Generate Register Order Message
       </div>
     </div>
     <div class="url">https://api.allbit.com/open/v2/generate-order</div>
@@ -920,7 +920,12 @@ When the API KEY is not valid:
 </tr>
 </tbody>
 </table>
-</div></div>
+</div><hr>
+<h3 id="important">Important</h3>
+<blockquote>
+<p>To generate a transaction with the generated order, sign the actionHash value with a utility such as ‘web3’ and use the “Send Signed Message” API of the TRANSACTION API.</p>
+</blockquote>
+</div>
 
       <div class="headers">
         <div class="heading">HEADERS</div>
@@ -937,18 +942,18 @@ When the API KEY is not valid:
         <div class="body-heading">BODY</div>
           <hr>
           <div class="raw-body code-snippet">
-            <pre class="body-block click-to-expand-wrapper is-snippet-wrapper language-javascript"><code class="body-block is-highlighted language-javascript"><span class="token punctuation">{</span>
-    <span class="token string">"apiKey"</span><span class="token punctuation">:</span> Generated API Key<span class="token punctuation">,</span>
-    <span class="token string">"wallet"</span><span class="token punctuation">:</span> Allbit Wallet Address<span class="token punctuation">,</span>
-    <span class="token string">"orders"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
-        <span class="token punctuation">{</span>
-            <span class="token string">"pair"</span><span class="token punctuation">:</span> Pair ID<span class="token punctuation">,</span>
-            <span class="token string">"isSell"</span><span class="token punctuation">:</span> Whether order is sell <span class="token punctuation">(</span>Boolean<span class="token punctuation">)</span><span class="token punctuation">,</span>
-            <span class="token string">"price"</span><span class="token punctuation">:</span> price<span class="token punctuation">,</span>
-            <span class="token string">"amount"</span><span class="token punctuation">:</span> amount <span class="token punctuation">(</span>non decimal<span class="token punctuation">)</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">]</span>
-<span class="token punctuation">}</span></code></pre>
+            <pre class="body-block click-to-expand-wrapper is-snippet-wrapper"><code class="body-block language-javascript">{
+    "apiKey": Generated API Key,
+    "wallet": Allbit Wallet Address,
+    "orders": [
+        {
+            "pair": Pair ID,
+            "isSell": Whether order is sell (Boolean),
+            "price": price,
+            "amount": amount (non decimal)
+        }
+    ]
+}</code></pre>
           </div>
 
       </div>
@@ -969,27 +974,27 @@ When the API KEY is not valid:
 
     <div class="request code-snippet">
           <div class="formatted-requests is-default" data-lang="cURL" data-id="82704d7d-a0b9-4404-90f2-40f25675f589_0">
-            <pre class="click-to-expand-wrapper is-snippet-wrapper is-expandable language-javascript"><button class="btn btn-sm pull-right copy-request copy-request-modal" data-clipboard-target="#cURL_0_82704d7d-a0b9-4404-90f2-40f25675f589" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button><code class=" is-highlighted language-javascript" id="cURL_0_82704d7d-a0b9-4404-90f2-40f25675f589">curl <span class="token operator">--</span>location <span class="token operator">--</span>request POST <span class="token string">"https://api.allbit.com/open/v2/generate-order"</span> \
-  <span class="token operator">--</span>header <span class="token string">"Content-Type: application/json"</span> \
-  <span class="token operator">--</span>header <span class="token string">"Accept: application/json"</span> \
-  <span class="token operator">--</span>data "<span class="token punctuation">{</span>
-    \"apiKey\"<span class="token punctuation">:</span> \"HORYrlFVUHJuZ6VNXVmNjm6VJ0EONqZn23gUBMggTSAQxdy17XCx0nHguKuThAgyNSb6qRdIC3iLkxdSyVkp90tQc1SBuvmGWJjygjMhmLgtDZxjKZp2iIJReUjm3Htl\"<span class="token punctuation">,</span>
-    \"wallet\"<span class="token punctuation">:</span> \"<span class="token number">0xfaa8ed1fbac594dd017121df8ebd4fe2bea9016f</span>\"<span class="token punctuation">,</span>
-    \"orders\"<span class="token punctuation">:</span> <span class="token punctuation">[</span>
-        <span class="token punctuation">{</span>
-            \"pair\"<span class="token punctuation">:</span> <span class="token number">14</span><span class="token punctuation">,</span>
-            \"isSell\"<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-            \"price\"<span class="token punctuation">:</span> \"<span class="token number">1.000</span>\"<span class="token punctuation">,</span>
-            \"amount\"<span class="token punctuation">:</span> \"<span class="token number">1000000000000000000000</span>\"
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token punctuation">{</span>
-            \"pair\"<span class="token punctuation">:</span> <span class="token number">14</span><span class="token punctuation">,</span>
-            \"isSell\"<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-            \"price\"<span class="token punctuation">:</span> \"<span class="token number">1.000</span>\"<span class="token punctuation">,</span>
-            \"amount\"<span class="token punctuation">:</span> \"<span class="token number">1000000000000000000000</span>\"
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">]</span>
-<span class="token punctuation">}</span>"</code></pre>
+            <pre class="click-to-expand-wrapper is-snippet-wrapper"><button class="btn btn-sm pull-right copy-request copy-request-modal" data-clipboard-target="#cURL_0_82704d7d-a0b9-4404-90f2-40f25675f589" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button><code class="language-javascript" id="cURL_0_82704d7d-a0b9-4404-90f2-40f25675f589">curl --location --request POST "https://api.allbit.com/open/v2/generate-order" \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --data "{
+  \"apiKey\": \"HORYrlFVUHJuZ6VNXVmNjm6VJ0EONqZn23gUBMggTSAQxdy17XCx0nHguKuThAgyNSb6qRdIC3iLkxdSyVkp90tQc1SBuvmGWJjygjMhmLgtDZxjKZp2iIJReUjm3Htl\",
+  \"wallet\": \"0xfaa8ed1fbac594dd017121df8ebd4fe2bea9016f\",
+  \"orders\": [
+    {
+      \"pair\": 14,
+      \"isSell\": false,
+      \"price\": \"1.000\",
+      \"amount\": \"1000000000000000000000\"
+    },
+    {
+      \"pair\": 14,
+      \"isSell\": false,
+      \"price\": \"1.000\",
+      \"amount\": \"1000000000000000000000\"
+    }
+  ]
+}"</code></pre>
             <!-- Button over the expand overlay -->
             <button class="btn btn-sm pull-right copy-request" data-clipboard-target="#cURL_0_82704d7d-a0b9-4404-90f2-40f25675f589" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button>
           </div>
@@ -1008,17 +1013,17 @@ When the API KEY is not valid:
         </div>
         <div class="responses code-snippet">
               <div class="formatted-responses is-default" data-id="82704d7d-a0b9-4404-90f2-40f25675f589_0" data-lang="json">
-                  <pre class="click-to-expand-wrapper is-snippet-wrapper is-example is-expandable language-javascript" data-id="82704d7d-a0b9-4404-90f2-40f25675f589_0" data-lang="json"><code class=" is-highlighted language-javascript"><span class="token punctuation">{</span>
-  <span class="token string">"info"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
-    <span class="token punctuation">{</span>
-      <span class="token string">"info"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-        <span class="token string">"actionHash"</span><span class="token punctuation">:</span> <span class="token string">"0x457102ea07fbddad71191cfc137dbf7a278aafcb3e4617269f624553462278f6"</span><span class="token punctuation">,</span>
-        <span class="token string">"keystore"</span><span class="token punctuation">:</span> <span class="token string">"{\"version\":3,\"id\":\"a3859ed7-d94f-41b8-bb29-7bdf1ad66ee5\",\"address\":\"0xfaa8ed1fbac594dd017121df8ebd4fe2bea9016f\",\"crypto\":{\"ciphertext\":\"824a1ec55b9af8209405397a1c8ded796255f96a218ee58ebffa94d8b7cca7b0\",\"cipherparams\":{\"iv\":\"57451d852d4a3a6bc6d5b3f6dd51619a\"},\"cipher\":\"aes-128-ctr\",\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"salt\":\"8e20aed7bc8128a61474093989c3f642404f1f72b7cb9f3b0a2b3d7d2509e4da\",\"n\":8192,\"r\":8,\"p\":1},\"mac\":\"bfe28ae26e0e09bb7590b347cbdfbdb72b1f02bfd0e5de46b977f4de683a7682\"},\"provider\":{\"name\":\"allbit\",\"version\":1}}"</span><span class="token punctuation">,</span>
-        <span class="token string">"action"</span><span class="token punctuation">:</span> <span class="token number">1</span>
-      <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      <span class="token string">"result"</span><span class="token punctuation">:</span> <span class="token string">"success"</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token punctuation">{</span></code></pre>
+                  <pre class="click-to-expand-wrapper is-snippet-wrapper is-example" data-id="82704d7d-a0b9-4404-90f2-40f25675f589_0" data-lang="json"><code class="language-javascript">{
+  "info": [
+    {
+      "info": {
+        "actionHash": "0x457102ea07fbddad71191cfc137dbf7a278aafcb3e4617269f624553462278f6",
+        "keystore": "{\"version\":3,\"id\":\"a3859ed7-d94f-41b8-bb29-7bdf1ad66ee5\",\"address\":\"0xfaa8ed1fbac594dd017121df8ebd4fe2bea9016f\",\"crypto\":{\"ciphertext\":\"824a1ec55b9af8209405397a1c8ded796255f96a218ee58ebffa94d8b7cca7b0\",\"cipherparams\":{\"iv\":\"57451d852d4a3a6bc6d5b3f6dd51619a\"},\"cipher\":\"aes-128-ctr\",\"kdf\":\"scrypt\",\"kdfparams\":{\"dklen\":32,\"salt\":\"8e20aed7bc8128a61474093989c3f642404f1f72b7cb9f3b0a2b3d7d2509e4da\",\"n\":8192,\"r\":8,\"p\":1},\"mac\":\"bfe28ae26e0e09bb7590b347cbdfbdb72b1f02bfd0e5de46b977f4de683a7682\"},\"provider\":{\"name\":\"allbit\",\"version\":1}}",
+        "action": 1
+      },
+      "result": "success"
+    },
+    {</code></pre>
               </div>
         </div>
       </div>
@@ -1031,7 +1036,7 @@ When the API KEY is not valid:
     <div class="heading">
       <div class="name">
         <span class="POST method" title="POST">POST</span>
-        Generate order cancel message
+        Generate Cancel Order Message
       </div>
     </div>
     <div class="url">https://api.allbit.com/open/v2/cancel-order</div>
@@ -1064,7 +1069,12 @@ When the API KEY is not valid:
 </tr>
 </tbody>
 </table>
-</div></div>
+</div><hr>
+<h3 id="important">Important</h3>
+<blockquote>
+<p>To generate a transaction with the generated order, sign the actionHash value with a utility such as ‘web3’ and use the “Send Signed Message” API of the TRANSACTION API.</p>
+</blockquote>
+</div>
 
       <div class="headers">
         <div class="heading">HEADERS</div>
@@ -1082,9 +1092,9 @@ When the API KEY is not valid:
           <hr>
           <div class="raw-body code-snippet">
             <pre class="body-block click-to-expand-wrapper is-snippet-wrapper"><code class="body-block language-javascript">{
-    "apiKey": Generated API Key,
-    "wallet": Allbit Wallet Address,
-    "orders": Order Hash(ohash) Array
+  "apiKey": Generated API Key,
+  "wallet": Allbit Wallet Address,
+  "orders": Order Hash(ohash) Array
 }</code></pre>
           </div>
 
@@ -1106,14 +1116,14 @@ When the API KEY is not valid:
 
     <div class="request code-snippet">
           <div class="formatted-requests is-default" data-lang="cURL" data-id="a65eca5c-5fbd-44b7-922c-60ba9db0fb69_0">
-            <pre class="click-to-expand-wrapper is-snippet-wrapper language-javascript"><button class="btn btn-sm pull-right copy-request copy-request-modal" data-clipboard-target="#cURL_0_a65eca5c-5fbd-44b7-922c-60ba9db0fb69" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button><code class=" is-highlighted language-javascript" id="cURL_0_a65eca5c-5fbd-44b7-922c-60ba9db0fb69">curl <span class="token operator">--</span>location <span class="token operator">--</span>request POST <span class="token string">"https://api.allbit.com/open/v2/cancel-order"</span> \
-  <span class="token operator">--</span>header <span class="token string">"Accept: application/json"</span> \
-  <span class="token operator">--</span>header <span class="token string">"Content-Type: application/json"</span> \
-  <span class="token operator">--</span>data "<span class="token punctuation">{</span>
-    \"apiKey\"<span class="token punctuation">:</span> \"HORYrlFVUHJuZ6VNXVmNjm6VJ0EONqZn23gUBMggTSAQxdy17XCx0nHguKuThAgyNSb6qRdIC3iLkxdSyVkp90tQc1SBuvmGWJjygjMhmLgtDZxjKZp2iIJReUjm3Htl\"<span class="token punctuation">,</span>
-    \"wallet\"<span class="token punctuation">:</span> \"<span class="token number">0xfaa8ed1fbac594dd017121df8ebd4fe2bea9016f</span>\"<span class="token punctuation">,</span>
-    \"orders\"<span class="token punctuation">:</span> <span class="token punctuation">[</span>\"<span class="token number">0x000713e6e94042585c348b38b00ef810ae1756e38e04cc01e6329a8334f05ea5</span>\"<span class="token punctuation">]</span>
-<span class="token punctuation">}</span>"</code></pre>
+            <pre class="click-to-expand-wrapper is-snippet-wrapper"><button class="btn btn-sm pull-right copy-request copy-request-modal" data-clipboard-target="#cURL_0_a65eca5c-5fbd-44b7-922c-60ba9db0fb69" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button><code class="language-javascript" id="cURL_0_a65eca5c-5fbd-44b7-922c-60ba9db0fb69">curl --location --request POST "https://api.allbit.com/open/v2/cancel-order" \
+  --header "Accept: application/json" \
+  --header "Content-Type: application/json" \
+  --data "{
+  \"apiKey\": \"HORYrlFVUHJuZ6VNXVmNjm6VJ0EONqZn23gUBMggTSAQxdy17XCx0nHguKuThAgyNSb6qRdIC3iLkxdSyVkp90tQc1SBuvmGWJjygjMhmLgtDZxjKZp2iIJReUjm3Htl\",
+  \"wallet\": \"0xfaa8ed1fbac594dd017121df8ebd4fe2bea9016f\",
+  \"orders\": [\"0x000713e6e94042585c348b38b00ef810ae1756e38e04cc01e6329a8334f05ea5\"]
+}"</code></pre>
             <!-- Button over the expand overlay -->
             <button class="btn btn-sm pull-right copy-request" data-clipboard-target="#cURL_0_a65eca5c-5fbd-44b7-922c-60ba9db0fb69" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button>
           </div>
@@ -1149,6 +1159,131 @@ When the API KEY is not valid:
 </div>
 
 </div>
+    <div class="row row-no-padding row-eq-height" id="9df0b77f-4cdd-4b1b-b334-48a3377182e0">
+    <div class="col-md-6 col-xs-12 section">
+    <div class="api-information">
+  <div class="folder-name"><p>TRANSACTION API</p></div>
+  <div class="folder-description"></div>
+</div>
+  </div>
+  <div class="col-md-6 col-xs-12 examples folder-examples"></div>
+</div>
+      <div class="row row-no-padding row-eq-height" id="fb99e0c5-e2be-40d4-9b25-d821cf238ff9">
+  <div class="col-md-6 col-xs-12 section">
+  <div class="api-information">
+    <div class="heading">
+      <div class="name">
+        <span class="POST method" title="POST">POST</span>
+        Send Signed Message
+      </div>
+    </div>
+    <div class="url">https://api.allbit.com/open/v2/submit-signed-message</div>
+    <div class="description"><p>Sends generated and signed messages for order registration and cancellation.</p>
+<ul>
+<li>How to sign<ol>
+<li>By Order registration/cancellation API, Put <code>actionHash</code>, <code>action</code></li>
+<li>Sign with Ethereum utils, such as web3. (<code>\x19Ethereum Signed Message:\32</code>is should be prefix.)</li>
+<li>Get <code>v</code>, <code>r</code>, <code>s</code> value by signing, and put them when get request.</li>
+</ol>
+</li>
+</ul>
+<ul>
+<li><p>Example (node.js)</p>
+<pre class="click-to-expand-wrapper is-snippet-wrapper"><code>  let privateKey = '0x4c0883a69102937d6231471b5dbb6204fe5129617082792ae468d01a3f362311';
+  let action = 1;
+  let actionHash = '0x000713e6e94042585c348b38b00ef810ae1756e38e04cc01e6329a8334f05ea5';
+
+  let sig = web3.eth.accounts.sign(actionHash, privateKey);
+
+  let msg = {};
+  msg.action = action;
+  msg.actionHash = actionHash;
+  msg.message = {
+      v: web3.utils.toHex(sig.v),
+      r: sig.r,
+      s: sig.s
+  }
+</code></pre></li>
+</ul>
+<hr>
+</div>
+
+      <div class="headers">
+        <div class="heading">HEADERS</div>
+        <hr>
+          <div class="param row">
+            <div class="name col-md-3 col-xs-12">Content-Type</div>
+            <div class="value col-md-9 col-xs-12">application/json</div>
+          </div>
+      </div>
+
+
+
+      <div class="request-body">
+        <div class="body-heading">BODY</div>
+          <hr>
+          <div class="raw-body code-snippet">
+            <pre class="body-block click-to-expand-wrapper is-snippet-wrapper"><code class="body-block language-javascript">{
+  "apiKey": Generated API Key,
+  "wallet": Allbit Wallet Address,
+  "messages": [
+    {
+      "actionHash": message to sign,
+      "action": Action ID,
+      "message": {
+        "v": V value of&nbsp;signature result (1byte hex),
+        "r": R value of&nbsp;signature result (32byte hex),
+        "s": S value of&nbsp;signature result (32byte hex)
+      }
+    }
+  ]
+}</code></pre>
+          </div>
+
+      </div>
+
+  </div>
+  <br><br>
+</div>
+
+
+  <div class="col-md-6 col-xs-12 examples">
+    <div class="sample-request">
+      <div class="heading"><span>Example Request</span></div>
+
+      <div class="responses-index">
+          <div class="response-name"><span>서명된 메시지 전송</span></div>
+      </div>
+    </div>
+
+    <div class="request code-snippet">
+          <div class="formatted-requests is-default" data-lang="cURL" data-id="fb99e0c5-e2be-40d4-9b25-d821cf238ff9_0">
+            <pre class="click-to-expand-wrapper is-snippet-wrapper"><button class="btn btn-sm pull-right copy-request copy-request-modal" data-clipboard-target="#cURL_0_fb99e0c5-e2be-40d4-9b25-d821cf238ff9" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button><code class="language-javascript" id="cURL_0_fb99e0c5-e2be-40d4-9b25-d821cf238ff9">curl --location --request POST "https://api.allbit.com/open/v2/submit-signed-message" \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --data "{
+  \"apiKey\": \"HORYrlFVUHJuZ6VNXVmNjm6VJ0EONqZn23gUBMggTSAQxdy17XCx0nHguKuThAgyNSb6qRdIC3iLkxdSyVkp90tQc1SBuvmGWJjygjMhmLgtDZxjKZp2iIJReUjm3Htl\",
+  \"wallet\": \"0xfaa8ed1fbac594dd017121df8ebd4fe2bea9016f\",
+  \"messages\": [
+    {
+      \"actionHash\": \"0x000713e6e94042585c348b38b00ef810ae1756e38e04cc01e6329a8334f05ea5\",
+      \"action\": 1,
+      \"message\": {
+        \"v\":\"0x1c\",
+        \"r\":\"0xd1cc64f21b5d5ba7a3e099c2089d27956a89ad483790688f614b4d5a75266fbe\",
+        \"s\":\"0x76ebe2c6da14bd35ce245cc93fd723e8a30fc06e787f6ef18f55c3b0463496a7\"
+      }
+    }
+  ]
+}"</code></pre>
+            <!-- Button over the expand overlay -->
+            <button class="btn btn-sm pull-right copy-request" data-clipboard-target="#cURL_0_fb99e0c5-e2be-40d4-9b25-d821cf238ff9" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button>
+          </div>
+    </div>
+
+</div>
+
+</div>
     <div class="row row-no-padding row-eq-height" id="bb6e2a14-7bf9-4e20-b476-4c5d6699cdb8">
     <div class="col-md-6 col-xs-12 section">
     <div class="api-information">
@@ -1174,7 +1309,7 @@ When the API KEY is not valid:
     <div class="heading">
       <div class="name">
         <span class="GET method" title="GET">GET</span>
-        Get token list
+        Get Token List
       </div>
     </div>
     <div class="url">https://api.allbit.com/open/v2/coin-info-graph-list</div>
@@ -1352,7 +1487,7 @@ When the API KEY is not valid:
     <div class="heading">
       <div class="name">
         <span class="POST method" title="POST">POST</span>
-        Get order list
+        Get Order List
       </div>
     </div>
     <div class="url">https://api.allbit.com/open/v2/coin/order-list</div>
@@ -1481,7 +1616,7 @@ When the API KEY is not valid:
     <div class="heading">
       <div class="name">
         <span class="POST method" title="POST">POST</span>
-        Get trade list
+        Get Trade List
       </div>
     </div>
     <div class="url">https://api.allbit.com/open/v2/coin/trade-list</div>
@@ -1637,131 +1772,6 @@ When the API KEY is not valid:
 </div>
 
 </div>
-    <div class="row row-no-padding row-eq-height" id="9df0b77f-4cdd-4b1b-b334-48a3377182e0">
-    <div class="col-md-6 col-xs-12 section">
-    <div class="api-information">
-  <div class="folder-name"><p>TRANSACTION API</p></div>
-  <div class="folder-description"></div>
-</div>
-  </div>
-  <div class="col-md-6 col-xs-12 examples folder-examples"></div>
-</div>
-      <div class="row row-no-padding row-eq-height" id="fb99e0c5-e2be-40d4-9b25-d821cf238ff9">
-  <div class="col-md-6 col-xs-12 section">
-  <div class="api-information">
-    <div class="heading">
-      <div class="name">
-        <span class="POST method" title="POST">POST</span>
-        Submit signed message
-      </div>
-    </div>
-    <div class="url">https://api.allbit.com/open/v2/submit-signed-message</div>
-    <div class="description"><p>Sends generated and signed messages for order registration and cancellation.</p>
-<ul>
-<li>How to sign<ol>
-<li>By Order registration/cancellation API, Put <code>actionHash</code>, <code>action</code></li>
-<li>Sign with Ethereum utils, such as web3. (<code>\x19Ethereum Signed Message:\32</code>is should be prefix.)</li>
-<li>Get <code>v</code>, <code>r</code>, <code>s</code> value by signing, and put them when get request.</li>
-</ol>
-</li>
-</ul>
-<ul>
-<li><p>Example (node.js)</p>
-<pre class="click-to-expand-wrapper is-snippet-wrapper"><code>  let privateKey = '0x4c0883a69102937d6231471b5dbb6204fe5129617082792ae468d01a3f362311';
-  let action = 1;
-  let actionHash = '0x000713e6e94042585c348b38b00ef810ae1756e38e04cc01e6329a8334f05ea5';
-
-  let sig = web3.eth.accounts.sign(actionHash, privateKey);
-
-  let msg = {};
-  msg.action = action;
-  msg.actionHash = actionHash;
-  msg.message = {
-      v: web3.utils.toHex(sig.v),
-      r: sig.r,
-      s: sig.s
-  }
-</code></pre></li>
-</ul>
-<hr>
-</div>
-
-      <div class="headers">
-        <div class="heading">HEADERS</div>
-        <hr>
-          <div class="param row">
-            <div class="name col-md-3 col-xs-12">Content-Type</div>
-            <div class="value col-md-9 col-xs-12">application/json</div>
-          </div>
-      </div>
-
-
-
-      <div class="request-body">
-        <div class="body-heading">BODY</div>
-          <hr>
-          <div class="raw-body code-snippet">
-            <pre class="body-block click-to-expand-wrapper is-snippet-wrapper"><code class="body-block language-javascript">{
-    "apiKey": Generated API Key,
-    "wallet": Allbit Wallet Address,
-    "messages": [
-        {
-            "actionHash": message to sign,
-            "action": Action ID,
-            "message": {
-                "v": V value of&nbsp;signature result (1byte hex),
-                "r": R value of&nbsp;signature result (32byte hex),
-                "s": S value of&nbsp;signature result (32byte hex)
-            }
-        }
-    ]
-}</code></pre>
-          </div>
-
-      </div>
-
-  </div>
-  <br><br>
-</div>
-
-
-  <div class="col-md-6 col-xs-12 examples">
-    <div class="sample-request">
-      <div class="heading"><span>Example Request</span></div>
-
-      <div class="responses-index">
-          <div class="response-name"><span>서명된 메시지 전송</span></div>
-      </div>
-    </div>
-
-    <div class="request code-snippet">
-          <div class="formatted-requests is-default" data-lang="cURL" data-id="fb99e0c5-e2be-40d4-9b25-d821cf238ff9_0">
-            <pre class="click-to-expand-wrapper is-snippet-wrapper"><button class="btn btn-sm pull-right copy-request copy-request-modal" data-clipboard-target="#cURL_0_fb99e0c5-e2be-40d4-9b25-d821cf238ff9" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button><code class="language-javascript" id="cURL_0_fb99e0c5-e2be-40d4-9b25-d821cf238ff9">curl --location --request POST "https://api.allbit.com/open/v2/submit-signed-message" \
-  --header "Content-Type: application/json" \
-  --header "Accept: application/json" \
-  --data "{
-    \"apiKey\": \"HORYrlFVUHJuZ6VNXVmNjm6VJ0EONqZn23gUBMggTSAQxdy17XCx0nHguKuThAgyNSb6qRdIC3iLkxdSyVkp90tQc1SBuvmGWJjygjMhmLgtDZxjKZp2iIJReUjm3Htl\",
-    \"wallet\": \"0xfaa8ed1fbac594dd017121df8ebd4fe2bea9016f\",
-    \"messages\": [
-        {
-            \"actionHash\": \"0x000713e6e94042585c348b38b00ef810ae1756e38e04cc01e6329a8334f05ea5\",
-            \"action\": 1,
-            \"message\": {
-                \"v\":\"0x1c\",
-                \"r\":\"0xd1cc64f21b5d5ba7a3e099c2089d27956a89ad483790688f614b4d5a75266fbe\",
-                \"s\":\"0x76ebe2c6da14bd35ce245cc93fd723e8a30fc06e787f6ef18f55c3b0463496a7\"
-            }
-        }
-    ]
-}"</code></pre>
-            <!-- Button over the expand overlay -->
-            <button class="btn btn-sm pull-right copy-request" data-clipboard-target="#cURL_0_fb99e0c5-e2be-40d4-9b25-d821cf238ff9" data-before-copy="Copy to Clipboard" data-after-copy="Copied"></button>
-          </div>
-    </div>
-
-</div>
-
-</div>
 </div>
           </div>
           <div class="no-gutter phantom-sidebar"></div>
@@ -1797,9 +1807,9 @@ When the API KEY is not valid:
   <div class="POST method" title="POST">
   <span>POST</span>
 </div>
-<div class="request-name" title="Get account info">
+<div class="request-name" title="Get Account Info">
   <a class="nav-link dropdown-item" href="#983db0d9-a9b5-4675-b2af-bec92ba3a251">
-    <span>Get account info</span>
+    <span>Get Account Info</span>
   </a>
 </div>
 </li>
@@ -1807,9 +1817,9 @@ When the API KEY is not valid:
   <div class="POST method" title="POST">
   <span>POST</span>
 </div>
-<div class="request-name" title="Get run order list">
+<div class="request-name" title="Get Run Order List">
   <a class="nav-link dropdown-item" href="#78a2a6b5-01c2-46c7-9b09-2d923c769511">
-    <span>Get run order list</span>
+    <span>Get Run Order List</span>
   </a>
 </div>
 </li>
@@ -1817,9 +1827,9 @@ When the API KEY is not valid:
   <div class="POST method" title="POST">
   <span>POST</span>
 </div>
-<div class="request-name" title="Get order status">
+<div class="request-name" title="Get Order Status">
   <a class="nav-link dropdown-item" href="#46154d08-ecfc-4d97-b309-555480080936">
-    <span>Get order status</span>
+    <span>Get Order Status</span>
   </a>
 </div>
 </li>
@@ -1827,9 +1837,9 @@ When the API KEY is not valid:
   <div class="POST method" title="POST">
   <span>POST</span>
 </div>
-<div class="request-name" title="Generate order message">
+<div class="request-name" title="Generate Register Order Message">
   <a class="nav-link dropdown-item" href="#82704d7d-a0b9-4404-90f2-40f25675f589">
-    <span>Generate order message</span>
+    <span>Generate Register Order Message</span>
   </a>
 </div>
 </li>
@@ -1837,57 +1847,9 @@ When the API KEY is not valid:
   <div class="POST method" title="POST">
   <span>POST</span>
 </div>
-<div class="request-name" title="Generate order cancel message">
+<div class="request-name" title="Generate Cancel Order Message">
   <a class="nav-link dropdown-item" href="#a65eca5c-5fbd-44b7-922c-60ba9db0fb69">
-    <span>Generate order cancel message</span>
-  </a>
-</div>
-</li>
-  </ul>
-</li>
-      <li class="folder clearfix">
-  <div class="folder-label clearfix">
-    <div class="toggle-folder-collapse">
-      <div class="pm-doc-sprite pm-doc-sprite-triangle">
-      </div>
-    </div>
-    <div class="pm-doc-sprite pm-doc-sprite-folder"></div>
-    <div class="folder-link">
-      <a class="nav-link dropdown-item" href="#bb6e2a14-7bf9-4e20-b476-4c5d6699cdb8">
-        <div class="name truncate">
-          <span>QUOTATION API</span>
-        </div>
-      </a>
-    </div>
-  </div>
-  <ul>
-        <li class="request">
-  <div class="GET method" title="GET">
-  <span>GET</span>
-</div>
-<div class="request-name" title="Get token list">
-  <a class="nav-link dropdown-item" href="#f54d69e4-be87-4c24-a458-ea469001aef5">
-    <span>Get token list</span>
-  </a>
-</div>
-</li>
-        <li class="request">
-  <div class="POST method" title="POST">
-  <span>POST</span>
-</div>
-<div class="request-name" title="Get order list">
-  <a class="nav-link dropdown-item" href="#d119eed5-3ec9-4235-8a62-65e460c4bdb2">
-    <span>Get order list</span>
-  </a>
-</div>
-</li>
-        <li class="request">
-  <div class="POST method" title="POST">
-  <span>POST</span>
-</div>
-<div class="request-name" title="Get trade list">
-  <a class="nav-link dropdown-item" href="#0fe4d629-d4a5-46eb-9b83-0821f73428cb">
-    <span>Get trade list</span>
+    <span>Generate Cancel Order Message</span>
   </a>
 </div>
 </li>
@@ -1913,9 +1875,57 @@ When the API KEY is not valid:
   <div class="POST method" title="POST">
   <span>POST</span>
 </div>
-<div class="request-name" title="Submit signed message">
+<div class="request-name" title="Send Signed Message">
   <a class="nav-link dropdown-item" href="#fb99e0c5-e2be-40d4-9b25-d821cf238ff9">
-    <span>Submit signed message</span>
+    <span>Send Signed Message</span>
+  </a>
+</div>
+</li>
+  </ul>
+</li>
+      <li class="folder clearfix">
+  <div class="folder-label clearfix">
+    <div class="toggle-folder-collapse">
+      <div class="pm-doc-sprite pm-doc-sprite-triangle">
+      </div>
+    </div>
+    <div class="pm-doc-sprite pm-doc-sprite-folder"></div>
+    <div class="folder-link">
+      <a class="nav-link dropdown-item" href="#bb6e2a14-7bf9-4e20-b476-4c5d6699cdb8">
+        <div class="name truncate">
+          <span>QUOTATION API</span>
+        </div>
+      </a>
+    </div>
+  </div>
+  <ul>
+        <li class="request">
+  <div class="GET method" title="GET">
+  <span>GET</span>
+</div>
+<div class="request-name" title="Get Token List">
+  <a class="nav-link dropdown-item" href="#f54d69e4-be87-4c24-a458-ea469001aef5">
+    <span>Get Token List</span>
+  </a>
+</div>
+</li>
+        <li class="request">
+  <div class="POST method" title="POST">
+  <span>POST</span>
+</div>
+<div class="request-name" title="Get Order List">
+  <a class="nav-link dropdown-item" href="#d119eed5-3ec9-4235-8a62-65e460c4bdb2">
+    <span>Get Order List</span>
+  </a>
+</div>
+</li>
+        <li class="request">
+  <div class="POST method" title="POST">
+  <span>POST</span>
+</div>
+<div class="request-name" title="Get Trade List">
+  <a class="nav-link dropdown-item" href="#0fe4d629-d4a5-46eb-9b83-0821f73428cb">
+    <span>Get Trade List</span>
   </a>
 </div>
 </li>
@@ -1933,8 +1943,5 @@ When the API KEY is not valid:
 
 <script type="text/javascript" id="">(function(a,d){var b=!1,c=function(a){b||(dataLayer.push({event:"documenter_engaged"}),b=!0)};a.setTimeout(function(){a.addEventListener("click",c,!1);d.addEventListener("scroll",c,!1)},1E3)})(window,document);</script><script type="text/javascript" id="">var meta={};meta.url=google_tag_manager["GTM-KCKQFT"].macro(3);dataLayer.push({eventSource:"documenter",eventCategory:"documenter",eventAction:"view",eventLabel:google_tag_manager["GTM-KCKQFT"].macro(4),eventMeta:meta});</script><script type="text/javascript" id="">(function(){var eventData,request=new XMLHttpRequest,eventAPI={"production":"https://analytics.getpostman.com/event","staging":"https://analytics.getpostman-beta.com/event","beta":"https://analytics.getpostman-beta.com/event"},apiMethod="POST",thisEvent="documenter",thisEnv="production",EventSource=function(property,type,indexType){return{"type":type,"property":property,"indexType":indexType}},eventSources={"documenter":new EventSource("documenter","events-website","client-events"),
 "echo":new EventSource("echo","events-website","client-events")},populateIfDefined=function(dataKey,dataLayerValue){if(dataLayerValue&&dataLayerValue!=="undefined"&&dataLayerValue!=="null")eventData[dataKey]=dataLayerValue};thisEvent=eventSources[thisEvent];eventAPI=eventAPI[thisEnv];if(thisEvent&&eventAPI){eventData={"type":thisEvent.type,"indexType":thisEvent.indexType,"env":thisEnv,"property":thisEvent.property,"timestamp":(new Date).toISOString()};populateIfDefined("category","documenter");
-populateIfDefined("action","view");populateIfDefined("label","undefined");populateIfDefined("value","undefined");populateIfDefined("meta",google_tag_manager["GTM-KCKQFT"].macro(5));populateIfDefined("userId","undefined");populateIfDefined("teamId","undefined");if("undefined"==="run_in_postman")if(""&&""!=="undefined")eventData.meta={referrer:""};if(google_tag_manager["GTM-KCKQFT"].macro(6))console.log("Sending LS event:",
-eventData);eventData=btoa(JSON.stringify(eventData));request.open(apiMethod,eventAPI,true);setTimeout(function(){request.send(eventData)},0);dataLayer.push({"eventCategory":"","eventAction":"","eventLabel":"","eventValue":"","eventSource":"","eventMeta":{}})}})();</script><script type="text/javascript" id="">var meta={};meta.url=google_tag_manager["GTM-KCKQFT"].macro(11);dataLayer.push({eventSource:"documenter",eventCategory:"documenter",eventAction:"engage",eventLabel:google_tag_manager["GTM-KCKQFT"].macro(12),eventMeta:meta});</script><script type="text/javascript" id="">(function(){var eventData,request=new XMLHttpRequest,eventAPI={"production":"https://analytics.getpostman.com/event","staging":"https://analytics.getpostman-beta.com/event","beta":"https://analytics.getpostman-beta.com/event"},apiMethod="POST",thisEvent="documenter",thisEnv="production",EventSource=function(property,type,indexType){return{"type":type,"property":property,"indexType":indexType}},eventSources={"documenter":new EventSource("documenter","events-website","client-events"),
-"echo":new EventSource("echo","events-website","client-events")},populateIfDefined=function(dataKey,dataLayerValue){if(dataLayerValue&&dataLayerValue!=="undefined"&&dataLayerValue!=="null")eventData[dataKey]=dataLayerValue};thisEvent=eventSources[thisEvent];eventAPI=eventAPI[thisEnv];if(thisEvent&&eventAPI){eventData={"type":thisEvent.type,"indexType":thisEvent.indexType,"env":thisEnv,"property":thisEvent.property,"timestamp":(new Date).toISOString()};populateIfDefined("category","documenter");
-populateIfDefined("action","engage");populateIfDefined("label","undefined");populateIfDefined("value","");populateIfDefined("meta",google_tag_manager["GTM-KCKQFT"].macro(13));populateIfDefined("userId","undefined");populateIfDefined("teamId","undefined");if("undefined"==="run_in_postman")if(""&&""!=="undefined")eventData.meta={referrer:""};if(google_tag_manager["GTM-KCKQFT"].macro(14))console.log("Sending LS event:",
+populateIfDefined("action","view");populateIfDefined("label","undefined");populateIfDefined("value","undefined");populateIfDefined("meta",google_tag_manager["GTM-KCKQFT"].macro(5));populateIfDefined("userId","undefined");populateIfDefined("teamId","undefined");if("undefined"==="run_in_postman")if("https:\/\/allbit.postman.co\/collections\/70318-25205daa-e35f-4fed-86da-51894671d920?workspace\x3d884bfdde-f868-4eb6-875b-c73a9736a482"&&"https:\/\/allbit.postman.co\/collections\/70318-25205daa-e35f-4fed-86da-51894671d920?workspace\x3d884bfdde-f868-4eb6-875b-c73a9736a482"!=="undefined")eventData.meta={referrer:"https:\/\/allbit.postman.co\/collections\/70318-25205daa-e35f-4fed-86da-51894671d920?workspace\x3d884bfdde-f868-4eb6-875b-c73a9736a482"};if(google_tag_manager["GTM-KCKQFT"].macro(6))console.log("Sending LS event:",
 eventData);eventData=btoa(JSON.stringify(eventData));request.open(apiMethod,eventAPI,true);setTimeout(function(){request.send(eventData)},0);dataLayer.push({"eventCategory":"","eventAction":"","eventLabel":"","eventValue":"","eventSource":"","eventMeta":{}})}})();</script></body></html>
